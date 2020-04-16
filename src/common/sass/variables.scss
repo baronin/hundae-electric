@@ -1,11 +1,14 @@
+// Path for img
+$pathImgCss: "../../assets/img/";
+
 // Responsive
-$mobile-width: 590px;
+$xmobile-width: 540px;
+$mobile-width: 600px;
 $tablet-width: 768px;
 $laptop-width: 1024px;
 $desktop-width: 1366px;
 
 // indents 12 15/16 18 24/25/26 6 20 8   42 30 50
-
 $indents-6: 6px;
 $indents-8: 8px;
 $indents-12: 12px;
@@ -14,7 +17,7 @@ $indents-18: 18px;
 $indents-20: 20px;
 $indents-25: 25px;
 $indents-30: 30px;
-$indents-42: 42px;
+$indents-40: 40px;
 $indents-50: 50px;
 
 // Colors
@@ -31,8 +34,6 @@ $color-lightgreen: #aed60a;
 $color-darkgreen: #43b22a;
 
 // Fonts
-$font-family-base: "Roboto-Regular", "Helvetica", "Arial", sans-serif;
-$font-weight-regular: 400;
 
 // Fonts Size (xxs,xs,s,m,l,xl.2xl, 3xl, 4xl etc...)
 $font-size-xxs: 12px;
@@ -59,7 +60,6 @@ $font-family-suisse-regular: "SuisseIntl-Regular", sans-serif;
 $font-family-suisse-medium: "SuisseIntl-Medium", sans-serif;
 $font-family-suisse-bold: "SuisseIntl-SemiBold", sans-serif;
 
-$font-family-base: $font-family-roboto;
+$font-family-base: $font-family-roboto, sans-serif;
+$font-weight-regular: 400;
 
-// Path for img
-$pathImgCss: "../../assets/img/";
