@@ -1,0 +1,65 @@
+// Responsive
+$mobile-width: 590px;
+$tablet-width: 768px;
+$laptop-width: 1024px;
+$desktop-width: 1366px;
+
+// indents 12 15/16 18 24/25/26 6 20 8   42 30 50
+
+$indents-6: 6px;
+$indents-8: 8px;
+$indents-12: 12px;
+$indents-15: 15px;
+$indents-18: 18px;
+$indents-20: 20px;
+$indents-25: 25px;
+$indents-30: 30px;
+$indents-42: 42px;
+$indents-50: 50px;
+
+// Colors
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #9597a9;
+$color-grey-light: #e5e6ed;
+$color-dark-blue: #1b1e37;
+$color-blue-light: #50c0ff;
+$color-blue: #009af1;
+$color-yellow: #d5ff39;
+$color-green: #9ac32e;
+$color-lightgreen: #aed60a;
+$color-darkgreen: #43b22a;
+
+// Fonts
+$font-family-base: "Roboto-Regular", "Helvetica", "Arial", sans-serif;
+$font-weight-regular: 400;
+
+// Fonts Size (xxs,xs,s,m,l,xl.2xl, 3xl, 4xl etc...)
+$font-size-xxs: 12px;
+$font-size-xs: 13px;
+$font-size-s: 14px;
+$font-size-m: 15px;
+$font-size-l: 17px;
+$font-size-xl: 18px;
+$font-size-2xl: 21px;
+$font-size-3xl: 30px;
+$font-size-4xl: 36px;
+$font-size-5xl: 42px;
+$font-size-large: 72px;
+
+$font-size-default: $font-size-xs;
+
+// Fonts name
+$font-family-roboto: "Roboto-Regular", sans-serif;
+$font-family-roboto-bold: "Roboto-Bold", sans-serif;
+$font-family-roboto-black: "Roboto-Black", sans-serif;
+$font-family-rubik-regular: "Rubik-Regular", sans-serif;
+$font-family-rubik-bold: "Rubik-Medium", sans-serif;
+$font-family-suisse-regular: "SuisseIntl-Regular", sans-serif;
+$font-family-suisse-medium: "SuisseIntl-Medium", sans-serif;
+$font-family-suisse-bold: "SuisseIntl-SemiBold", sans-serif;
+
+$font-family-base: $font-family-roboto;
+
+// Path for img
+$pathImgCss: "../../assets/img/";

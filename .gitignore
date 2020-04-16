@@ -1,4 +1,12 @@
 .sass-cache/
+/.idea
 *.css.map
 *.sass.map
 *.scss.map
+
+/dist
+.DS_Store
+npm-debug.log
+/node_modules
+package-lock.json
+

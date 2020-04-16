@@ -1,0 +1,33 @@
+@import "mixins";
+
+@font-face {
+  @include font("Roboto-Regular", 400, normal, "Roboto");
+}
+
+@font-face {
+  @include font("Roboto-Bold", 500, bold, "Roboto");
+}
+
+@font-face {
+  @include font("Roboto-Black", 900, normal, "Roboto");
+}
+
+@font-face {
+  @include font("Rubik-Regular", 400, normal, "Rubik");
+}
+
+@font-face {
+  @include font("Rubik-Medium", 500, normal, "Rubik");
+}
+
+@font-face {
+  @include font("SuisseIntl-Regular", 400, normal, "Suisse-Intl");
+}
+
+@font-face {
+  @include font("SuisseIntl-Medium", 500, bold, "Suisse-Intl");
+}
+
+@font-face {
+  @include font("SuisseIntl-SemiBold", 900, bold, "Suisse-Intl");
+}
