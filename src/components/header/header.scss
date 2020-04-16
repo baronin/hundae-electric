@@ -1,6 +1,8 @@
 @import "../../common/sass/mixins";
 
 .header {
+  padding-bottom: 18px;
+
   .btn-hamburger {
     display: none;
     @include tablet {

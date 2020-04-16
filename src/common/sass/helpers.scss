@@ -1,3 +1,4 @@
+@import "variables";
 .has-text-center {
   text-align: center;
 }
@@ -14,4 +15,10 @@
   width: 100%;
   display: block;
   height: auto;
+}
+
+.title {
+  font-size: $font-size-4xl;
+  font-family: $font-family-roboto-black;
+  text-transform: uppercase;
 }
