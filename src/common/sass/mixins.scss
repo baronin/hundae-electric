@@ -18,6 +18,11 @@ $pathFonts: "/assets/fonts";
 }
 
 // Responsive
+@mixin small-mobile {
+  @media (max-width: #{$xmobile-width - 1px}) {
+    @content;
+  }
+}
 @mixin mobile {
   @media (max-width: #{$mobile-width - 1px}) {
     @content;
@@ -76,11 +81,16 @@ $pathFonts: "/assets/fonts";
   white-space: nowrap;
 }
 
-@mixin container($mw: 1016px, $px: 15px) {
+@mixin container($mw: 1046px, $px: 15px) {
   max-width: $mw;
   width: 100%;
   padding-left: $px;
   padding-right: $px;
   margin-right: auto;
   margin-left: auto;
+}
+@mixin display-flex($hor, $vert) {
+  display: flex;
+  justify-content: $hor;
+  align-items: $vert;
 }
