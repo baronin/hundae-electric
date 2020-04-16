@@ -118,7 +118,7 @@
 
 .header-bottom {
   @include display-flex(space-between, center);
-  @include laptop {
+  @include tablet {
     flex-wrap: wrap;
   }
   @include mobile {
@@ -132,9 +132,11 @@
 }
 
 .header-nav {
+  z-index: 1;
   @include laptop {
     margin-top: 8px;
     margin-bottom: 8px;
+    flex-shrink: 0;
   }
   @include mobile {
     margin-top: 0;
@@ -172,6 +174,7 @@
   a {
     font-size: $font-size-s;
     color: $color-black;
+
     &:hover {
       color: $color-blue;
     }
@@ -186,7 +189,7 @@
     & > li {
       margin-right: $indents-40;
       @include laptop {
-        margin-right: $indents-25;
+        margin-right: $indents-18;
       }
       @include tablet {
         margin-right: 0;
@@ -200,11 +203,20 @@
 
       &:hover .header-nav-list-inner {
         display: block;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 4px 12px 19px -9px rgba(0, 0, 0, 0.15);
+        @include tablet {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          box-shadow: none;
+        }
       }
 
       &:hover > a:after {
         transform: translateY(-50%) rotate(180deg)
       }
+
       & > a {
         position: relative;
         padding-right: 14px;
@@ -228,6 +240,7 @@
     position: absolute;
     display: none;
     padding-top: 10px;
+    background-color: $color-white;
     @include tablet {
       position: relative;
     }
