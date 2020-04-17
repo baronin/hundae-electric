@@ -82,6 +82,17 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+h1 {
+  font-size: $font-size-4xl;
+}
+
+h2 {
+  font-size: $font-size-3xl;
+}
+
+h3 {
+  font-size: $font-size-2xl;
+}
 a {
   display: inline-block;
   text-decoration: none;
