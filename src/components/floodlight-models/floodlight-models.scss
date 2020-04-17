@@ -1,0 +1,51 @@
+@import "../../common/sass/mixins";
+.floodlight-models {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.floodlight-models-container {
+  @include container(1046px, 40px);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 1px solid $color-grey-light;
+  border-radius: 5px;
+}
+
+.floodlight-models-title {
+  font-size: 25px;
+}
+
+.floodlight-models-hr {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  height: 1px;
+  color: $color-grey-light;
+  background-color: $color-grey-light;
+  border: none;
+}
+
+.floodlight-models-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.floodlight-models-item {
+  max-width: 16.66%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: $font-size-m;
+
+  h4 {
+    margin-bottom: 12px;
+    color: $color-blue-light;
+  }
+
+  a {
+    color: $color-black;
+    line-height: 20px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

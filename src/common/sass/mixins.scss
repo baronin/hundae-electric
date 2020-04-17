@@ -84,6 +84,7 @@ $pathFonts: "/assets/fonts";
   margin-right: auto;
   margin-left: auto;
 }
+
 @mixin display-flex($hor, $vert) {
   display: flex;
   justify-content: $hor;
