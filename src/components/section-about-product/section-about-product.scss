@@ -1,0 +1,109 @@
+@import "../../common/sass/mixins";
+
+.about-products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h2 {
+    font-size: $font-size-2xl;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 12px;
+    line-height: 18px;
+  }
+}
+
+.about-products-container {
+  @include container(1086px);
+  display: flex;
+  @include laptop {
+    flex-direction: column;
+  }
+
+  .about-products-main,
+  .about-products-extra {
+    display: flex;
+    width: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+    @include laptop {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.about-products-main {
+  max-width: 60%;
+  @include laptop {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .about-products-img-wrap {
+    max-width: 218px;
+    margin-right: 56px;
+    margin-top: -30px;
+    flex-shrink: 0;
+    @include laptop {
+      max-width: 132px;
+      margin-right: 20px;
+    }
+
+    img {
+      width: 100%;
+      @include laptop {
+        max-height: 292px;
+      }
+    }
+  }
+
+  .about-products-desc {
+    @include laptop {
+      overflow: hidden;
+    }
+  }
+
+  .about-products-content {
+    @include laptop {
+      display: -webkit-box;
+      -webkit-line-clamp: 9;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+.about-products-extra {
+  max-width: 40%;
+  flex-direction: column;
+  @include laptop {
+    max-width: 100%;
+  }
+}
+
+.article-about-products {
+  display: flex;
+  margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.article-about-products-img-wrap {
+  max-width: 130px;
+  flex-shrink: 0;
+  margin-right: 22px;
+}
+
+.about-products-link {
+  padding-top: 10px;
+  color: $color-black;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
