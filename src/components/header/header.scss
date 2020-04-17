@@ -2,6 +2,9 @@
 
 .header {
   padding-bottom: 18px;
+  @include mobile {
+    padding-bottom: 0;
+  }
 
   .btn-hamburger {
     display: none;
@@ -12,7 +15,7 @@
 
   strong {
     display: inline-block;
-    margin-bottom: $indents-6;
+    margin-bottom: 6px;
     font-family: $font-family-roboto-bold;
     font-size: $font-size-xs;
   }
@@ -32,11 +35,11 @@
 
 .header-top {
   @include display-flex(space-between, flex-start);
-  padding: $indents-40 0;
+  padding: 40px 0;
   line-height: 14px;
   @include laptop {
     flex-wrap: wrap;
-    padding-bottom: $indents-15;
+    padding-bottom: 15px;
   }
 }
 
@@ -98,6 +101,7 @@
 
 .header-contact-address {
   margin-right: 28px;
+  line-height: 15px;
   @include mobile {
     display: none;
   }
@@ -114,7 +118,11 @@
   .link-phone {
     font-size: $font-size-l;
     color: $color-black;
-    margin-bottom: $indents-15;
+    margin-bottom: 15px;
+
+    &:hover {
+      text-shadow: 1px 1px 2px black;
+    }
   }
 }
 
@@ -173,15 +181,6 @@
     }
   }
 
-  a {
-    font-size: $font-size-s;
-    color: $color-black;
-
-    &:hover {
-      color: $color-blue;
-    }
-  }
-
   .header-nav-list {
     display: flex;
     @include tablet {
@@ -189,9 +188,9 @@
     }
 
     & > li {
-      margin-right: $indents-40;
+      margin-right: 40px;
       @include laptop {
-        margin-right: $indents-18;
+        margin-right: 18px;
       }
       @include tablet {
         margin-right: 0;
@@ -202,7 +201,6 @@
           border-bottom: 1px solid $color-blue;
         }
       }
-
       &:hover .header-nav-list-inner {
         display: block;
         border-bottom-left-radius: 5px;
@@ -214,11 +212,9 @@
           box-shadow: none;
         }
       }
-
       &:hover > a:after {
         transform: translateY(-50%) rotate(180deg)
       }
-
       & > a {
         position: relative;
         padding-right: 14px;
@@ -234,6 +230,14 @@
           height: 8px;
           background: url("../../assets/img/icons/arrow.svg") no-repeat center;
         }
+      }
+    }
+
+    a {
+      font-size: $font-size-s;
+      color: $color-black;
+      &:hover {
+        color: $color-blue;
       }
     }
   }
