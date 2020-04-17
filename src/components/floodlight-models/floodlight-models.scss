@@ -1,14 +1,18 @@
 @import "../../common/sass/mixins";
 .floodlight-models {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 14px;
 }
+
 .floodlight-models-container {
   @include container(1046px, 40px);
   padding-top: 24px;
   padding-bottom: 24px;
   border: 1px solid $color-grey-light;
   border-radius: 5px;
+  @include mobile {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
 }
 
 .floodlight-models-title {
@@ -30,11 +34,22 @@
 }
 
 .floodlight-models-item {
+  display: flex;
+  flex-direction: column;
   max-width: 16.66%;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: $font-size-m;
+  @include laptop {
+    max-width: 20%;
+  }
+  @include tablet {
+    max-width: 33.33%;
+  }
+  @include mobile {
+    max-width: 50%;
+  }
 
   h4 {
     margin-bottom: 12px;

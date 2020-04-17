@@ -22,3 +22,13 @@
   font-family: $font-family-roboto-black;
   text-transform: uppercase;
 }
+
+.text-link {
+  padding-top: 10px;
+  color: $color-black;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
