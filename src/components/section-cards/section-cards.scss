@@ -1,0 +1,67 @@
+@import "../../common/sass/mixins";
+.section-cards {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.section-cards-container {
+  @include container(1070px);
+}
+
+.section-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.section-cards-col {
+  display: flex;
+  max-width: 25%;
+  padding: 7px;
+  @include tablet {
+    max-width: 100%;
+    padding: 5px 0;
+  }
+
+  .section-cards-border {
+    display: flex;
+    width: 100%;
+    padding: 20px 14px;
+    border: 1px solid $color-grey-light;
+    border-radius: 5px;
+    @include laptop {
+      flex-direction: column;
+    }
+    @include tablet {
+      flex-direction: row;
+    }
+
+  }
+  .card-image-holder {
+    @include laptop {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+    @include tablet {
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*
+ @include laptop {
+      flex-direction: column;
+    }
+    @include tablet {
+      max-width: 100%;
+      flex-direction: row;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+ */

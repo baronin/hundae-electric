@@ -10,9 +10,11 @@
 @import "common/sass/button";
 
 // Components
-@import "components/header/header";
 @import "components/hamburger/hamburger";
+@import "components/card/card";
+@import "components/header/header";
 @import "components/hero/hero";
+@import "components/section-cards/section-cards";
 
 // Pages
 @import "pages/main/main";
