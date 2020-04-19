@@ -1,0 +1,46 @@
+{% set advantages = [
+  {
+    title: 'Приглашаем на стенд ООО «МаринЛайт» на выставке НЕВА 2015 в новом Конгрессно Выставочном Центре «ЭкспоФорум» с 22 по 25 сентября 2015 года.',
+    descript: '',
+    time: '11 марта 2020 г',
+    img: '1'
+  },
+  {
+    title: 'Добро пожаловать на WISKA PARTY',
+    descript: '',
+    time: '11 марта 2020 г',
+    img: '2'
+  },
+  {
+    title: 'Добро пожаловать на WISKA PARTY',
+    descript: 'На стенде будут представлены новые образцы судовых светильников и прожекторов со светодиодными источниками света, а так же сигнально отличительные фонари, судовые свистки (тифоны), судовые грелки и большой ассортимент кабельных вводов.',
+    time: '11 марта 2020 г',
+    img: ''
+  },
+  {
+    title: 'Добро пожаловать на WISKA PARTY',
+    descript: '',
+    time: '11 марта 2020 г',
+    img: '3'
+  }
+] %}
+<section class="news-posts">
+  <div class="news-posts-container">
+    <header class="news-header">
+      <h3>Новости</h3>
+      <a href="#" class="btn btn-blue">Все новости</a>
+    </header>
+    <div class="news-posts-list">
+      {% for item in advantages %}
+      <a href="#" class="news-posts-item">
+        <div class="news-posts-img">
+          <img src="./assets/img/news-post/{{ item.img }}.jpg" alt="">
+        </div>
+        <span>{{ item.time }}</span>
+        <h4>{{ item.title }}</h4>
+        <p> {{ item.descript }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

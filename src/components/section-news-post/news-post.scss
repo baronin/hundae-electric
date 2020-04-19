@@ -1,0 +1,50 @@
+@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
+.news-posts {
+}
+
+.news-posts-container {
+  @include container();
+
+}
+
+.news-header {
+  @include display-flex(space-between, center)
+  margin-bottom: 22px;
+}
+
+.news-posts-img {
+  max-width: 240px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.news-posts-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+
+  span {
+    display: inline-block;
+    font-size: $font-size-xs;
+    color: $color-grey;
+    margin-bottom: 8px;
+  }
+
+  h4 {
+    font-size: $font-size-m;
+    line-height: 1.2;
+  }
+}
+
+.news-posts-item {
+  max-width: 25%;
+  width: 100%;
+  padding-left: 9px;
+  padding-right: 9px;
+  color: $color-black;
+  @include tablet {
+    max-width: 50%;
+  }
+}

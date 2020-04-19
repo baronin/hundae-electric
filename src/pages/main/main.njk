@@ -8,13 +8,16 @@
 
 <body>
 {% include "components/header/header.njk" %}
-{% include "components/hero/hero.njk" %}
-{% include "components/section-cards/section-cards.njk" %}
-{% include "components/section-about-products/section-about-products.njk" %}
-{% include "components/floodlight-models/floodlight-models.njk" %}
-{% include "components/main-information/main-information.njk" %}
-{% include "components/advantage/advantage.njk" %}
-{% include "components/section-target/target.njk" %}
+<main class="main">
+  {% include "components/hero/hero.njk" %}
+  {% include "components/section-cards/section-cards.njk" %}
+  {% include "components/section-about-products/section-about-products.njk" %}
+  {% include "components/floodlight-models/floodlight-models.njk" %}
+  {% include "components/main-information/main-information.njk" %}
+  {% include "components/section-advantage/advantage.njk" %}
+  {% include "components/section-target/target.njk" %}
+  {% include "components/section-news-post/news-post.njk" %}
+</main>
 
 {{ scripts('index') }}
 </body>
