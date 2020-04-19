@@ -1,0 +1,151 @@
+@import "../../common/sass/mixins";
+
+.footer {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.footer-container {
+  @include container();
+  display: flex;
+  @include mobile {
+    flex-wrap: wrap;
+  }
+}
+
+.footer-list-holder {
+  a {
+    font-size: $font-size-xxs;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: black;
+  }
+
+  & > a {
+    margin-bottom: 8px;
+    font-size: $font-size-xs;
+    font-family: $font-family-roboto-bold;
+    @include mobile {
+      color: $color-grey;
+      font-family: $font-family-roboto;
+      font-size: $font-size-xxs;
+    }
+  }
+}
+
+.footer-list-resolution,
+.footer-list-contacts {
+  > a {
+    font-size: $font-size-m;
+    font-family: $font-family-suisse-bold;
+  }
+}
+
+.footer-list-resolution {
+  a {
+    @include mobile {
+      font-family: $font-family-roboto;
+      font-size: $font-size-xs;
+    }
+  }
+}
+
+.footer-list-inner {
+  @include mobile {
+    display: none !important; // TODO Need fix important
+  }
+
+  a {
+    color: $color-grey;
+  }
+}
+
+.footer-left {
+  margin-right: 60px;
+
+
+  .footer-list-holder {
+    margin-bottom: 46px;
+    @include mobile {
+      margin-bottom: 8px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer-middle {
+  max-width: 540px;
+  @include mobile {
+    margin-right: 30px;
+  }
+
+  .footer-list-holder {
+    margin-bottom: 38px;
+    @include mobile {
+      margin-bottom: 8px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-list-inner {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  li {
+    max-width: 225px;
+    width: 100%;
+    margin-right: 30px;
+
+    @include laptop {
+      max-width: 50%;
+      margin-right: 0;
+      padding-right: 20px;
+    }
+  }
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  @include mobile {
+    max-width: 50%;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.footer-list-contacts {
+  @include mobile {
+    margin-top: 30px;
+    & > a {
+      font-size: $font-size-xs;
+      font-family: $font-family-roboto-bold;
+      color: $color-black;
+    }
+
+    .footer-list-inner {
+      display: block !important; // TODO Need fix important
+    }
+  }
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 1px solid $color-grey-light;
+
+  a {
+    color: $color-grey;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
