@@ -1,0 +1,50 @@
+{% set advantages = [
+  {
+    title: 'Выполненных проектов',
+    number: '128',
+    icon: '1'
+  },
+  {
+    title: 'Новых сотрудников',
+    number: '+7',
+    icon: '2'
+  },
+  {
+    title: 'Лет работы на рынке',
+    number: '12',
+    icon: '3'
+  },
+  {
+    title: 'Оборот за год',
+    number: '145%',
+    icon: '4'
+  }
+] %}
+<section class="advantage">
+  <div class="advantage-container">
+    <header class="advantage-header">
+      <div class="advantage-logo">
+        <img src="./assets/img/logo-advantage.svg" alt="alt">
+      </div>
+      <p>Перейти на сайт:  <a href="#" class="advantage-link">www.prom-ts.ru</a></p>
+    </header>
+    <div class="advantage-content">
+      <div class="advantage-list">
+        {% for item in advantages %}
+          <div class="advantage-item">
+            <div class="advantage-image"
+                 style="background-image: url('./assets/img/advantage-icons/{{ item.icon }}.svg')">
+              <span>{{ item.number }}</span>
+            </div>
+            <h4>{{ item.title }}</h4>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <p class="advantage-description">
+      Кроме того, мы принимаем на изготовление под заказ блоки питания с различными техническими характеристиками,
+      различной механической конструкции, с интерфейсом, который определяется клиентом, или расширенными
+      характеристиками.
+    </p>
+  </div>
+</section>

@@ -1,0 +1,135 @@
+@import "../../common/sass/mixins";
+@import "../../common/sass/variables";
+
+.advantage {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-family: $font-family-suisse-regular;
+
+  p {
+    color: $color-black;
+  }
+}
+
+.advantage-container {
+  position: relative;
+  @include container(1016px);
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: linear-gradient(117deg, rgba(213, 255, 57, 1) 0%, rgba(174, 214, 10, 1) 0%, rgba(67, 178, 42, 1) 100%);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 0;
+    border-left: 32px solid $color-white;
+    border-top: 0 solid transparent;
+    border-bottom: 29px solid transparent;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: 0;
+    border-right: 32px solid $color-white;
+    border-bottom: 0 solid transparent;
+    border-top: 29px solid transparent;
+  }
+
+}
+
+.advantage-header {
+  @include display-flex(space-between, center);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  font-size: $font-size-xxs;
+  @include mobile {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  p {
+    color: $color-white;
+    @include mobile {
+      text-align: right;
+    }
+  }
+
+  .advantage-link {
+    color: $color-white;
+    font-family: $font-family-suisse-regular;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.advantage-logo {
+  max-width: 218px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: $font-size-xl;
+  @include mobile {
+    //flex-direction: column;
+  }
+}
+
+.advantage-item {
+  display: inline-block;
+  max-width: 25%;
+  width: 100%;
+  text-align: center;
+  padding: 25px 10px;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+  }
+}
+
+.advantage-image {
+  @include display-flex(center, center);
+  width: 152px;
+  height: 107px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @include mobile {
+    width: (152px/2);
+    height: (107px/2);
+  }
+
+  span {
+    font-size: $font-size-large;
+    color: $color-white;
+    line-height: 42px;
+
+    @include mobile {
+      font-size: ($font-size-large/2);
+    }
+  }
+}
+
+.advantage-description {
+  padding-left: 60px;
+  padding-right: 20px;
+  font-size: $font-size-m;
+  line-height: 28px;
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
