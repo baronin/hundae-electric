@@ -9,7 +9,7 @@
 }
 
 .news-header {
-  @include display-flex(space-between, center)
+  @include display-flex(space-between, center);
   margin-bottom: 22px;
 }
 
