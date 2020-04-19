@@ -3,9 +3,17 @@
 .hero {
   position: relative;
   @include display-flex(flex-start, center);
-  min-height: 414px;
+  min-height: 580px;
   padding-top: 60px;
   padding-bottom: 60px;
+  @include fh {
+    min-height: 500px;
+  }
+
+  @include desktop {
+    min-height: 414px;
+  }
+
 }
 
 .hero-background {
