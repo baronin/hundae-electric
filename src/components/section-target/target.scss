@@ -1,0 +1,51 @@
+@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
+.target {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.target-container {
+  @include container();
+
+  h3 {
+    font-size: 23px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: $color-black;
+  }
+}
+
+.target-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: $font-size-s;
+  font-family: $font-family-roboto-bold;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.target-item {
+  padding: 8px;
+  max-width: 25%;
+  width: 100%;
+  @include tablet {
+    max-width: 50%;
+  }
+  @include mobile {
+    max-width: 100%;
+  }
+}
+.target-border {
+  @include display-flex(flex-start, center);
+  padding: 20px 15px;
+  border: 1px solid $color-blue-light;
+  border-radius: 5px;
+}
+
+.target-icon {
+  width: 47px;
+  height: 47px;
+  margin-right: 16px;
+}
