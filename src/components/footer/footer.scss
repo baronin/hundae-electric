@@ -5,6 +5,10 @@
   padding-bottom: 38px;
 }
 
+.footer-nav {
+  padding-bottom: 30px;
+}
+
 .footer-container {
   @include container();
   display: flex;
