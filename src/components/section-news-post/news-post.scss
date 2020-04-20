@@ -1,11 +1,8 @@
 @import "../../common/sass/variables";
 @import "../../common/sass/mixins";
-.news-posts {
-}
 
 .news-posts-container {
   @include container();
-
 }
 
 .news-header {
@@ -45,5 +42,16 @@
   color: $color-black;
   @include tablet {
     max-width: 50%;
+  }
+  @include mobile {
+    max-width: 100%;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .news-posts-img {
+      max-width: 100%;
+    }
   }
 }
