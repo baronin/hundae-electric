@@ -1,0 +1,19 @@
+{% from 'common/njk/head.njk' import head %}
+{% from 'common/njk/scripts.njk' import scripts %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+{{ head('index', 'hundae-electric') }}
+
+<body>
+{% include "components/header/header.njk" %}
+<main class="main">
+  {% include "components/section-product-info/product-info.njk" %}
+</main>
+{% include "components/footer/footer.njk" %}
+
+{{ scripts('index') }}
+</body>
+
+</html>

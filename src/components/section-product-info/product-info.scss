@@ -1,0 +1,21 @@
+@import "../../common/sass/mixins";
+
+.product-info-container {
+  @include container();
+}
+
+.product-power-list {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  li {
+    padding: 8px 14px;
+    font-family: $font-family-roboto-medium;
+    font-size: 26px;
+    background-color:$color-yellow;
+  }
+
+  & > li + li {
+    margin-left: 8px;
+  }
+}
