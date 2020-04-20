@@ -7,8 +7,7 @@
 .target-container {
   @include container();
 
-  h3 {
-    font-size: 23px;
+  h2 {
     margin-bottom: 25px;
   }
 

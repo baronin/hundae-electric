@@ -24,7 +24,7 @@
   & > a {
     margin-bottom: 8px;
     font-size: $font-size-xs;
-    font-family: $font-family-roboto-bold;
+    font-family: $font-family-roboto-medium;
     @include mobile {
       color: $color-grey;
       font-family: $font-family-roboto;
@@ -43,10 +43,14 @@
 
 .footer-list-resolution {
   a {
+    font-family: $font-family-suisse-regular;
     @include mobile {
-      font-family: $font-family-roboto;
       font-size: $font-size-xs;
     }
+  }
+
+  & > a {
+    font-family: $font-family-suisse-bold;
   }
 }
 
@@ -140,6 +144,10 @@
 .footer-bottom {
   padding-top: 30px;
   border-top: 1px solid $color-grey-light;
+  font-size: $font-size-xxs;
+  p {
+    font-family: $font-family-suisse-regular;
+  }
 
   a {
     color: $color-grey;

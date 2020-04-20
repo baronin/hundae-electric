@@ -5,7 +5,11 @@
 }
 
 @font-face {
-  @include font("Roboto-Bold", 700, bold, "Roboto");
+  @include font("Roboto-Medium", 400, normal, "Roboto");
+}
+
+@font-face {
+  @include font("Roboto-Bold", 500, normal, "Roboto");
 }
 
 @font-face {
@@ -25,9 +29,13 @@
 }
 
 @font-face {
-  @include font("SuisseIntl-Medium", 500, bold, "Suisse-Intl");
+  @include font("SuisseIntl-Medium", 500, normal, "Suisse-Intl");
 }
 
 @font-face {
-  @include font("SuisseIntl-SemiBold", 900, bold, "Suisse-Intl");
+  @include font("SuisseIntl-Book", 500, normal, "Suisse-Intl");
+}
+
+@font-face {
+  @include font("SuisseIntl-SemiBold", 700, normal, "Suisse-Intl");
 }
