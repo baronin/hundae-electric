@@ -1,0 +1,42 @@
+@import "../../common/sass/mixins";
+.breadcrumb {
+  display: flex;
+  padding-top: 38px;
+  padding-bottom: 20px;
+
+  .is-active {
+    color: darken($color-grey, 80%)
+  }
+
+  a {
+    font-family: $font-family-roboto;
+    font-size: $font-size-xs;
+    color: $color-grey;
+    transition: all .3s ease;
+    &:hover {
+      color: darken($color-grey, 80%)
+    }
+  }
+
+  li {
+    position: relative;
+    padding-right: 16px;
+  }
+
+  li:not(:last-of-type):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 7px;
+    height: 7px;
+    background-color: $color-grey;
+    border-radius: 50%;
+  }
+
+  & > li + li {
+    margin-left: 12px;
+  }
+}
+
