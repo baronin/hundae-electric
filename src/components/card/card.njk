@@ -1,10 +1,12 @@
-{% macro card(pathImg='', altText='alt', title='', desc='') %}
-  <div class="card-image-holder">
+{% macro createCard(pathImg='', altText='alt', title='', desc='null') %}
+  <div class="infographics-image-holder">
     <img src="{{ pathImg }}"
          alt="{{ altText }}">
   </div>
-  <div class="card-content">
+  <div class="infographics-content">
     <h4>{{ title }}</h4>
-    <p>{{ desc }}</p>
+    {% if desc != 'null' %}
+      <p>{{ desc }}</p>
+    {% endif %}
   </div>
 {% endmacro %}

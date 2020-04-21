@@ -5,6 +5,8 @@
   padding: 6px 15px;
   cursor: pointer;
   outline: none;
+  color: $color-white;
+
 
   &.btn-blue {
     color: $color-black;
@@ -16,6 +18,38 @@
       color: $color-white;
       border-color: transparent;
       background-color: $color-blue-light;
+    }
+  }
+
+  &.btn-blue-bg {
+    padding: 12px 32px;
+    font-family: $font-family-roboto-medium;
+    font-size: $font-size-m;
+    border:1px solid transparent;
+    border-radius: 5px;
+    background-color: $color-blue-light;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-black;
+      background-color: transparent;
+      border: 1px solid $color-blue-light;
+    }
+  }
+
+  &.btn-blue-bg-small {
+    padding: 8px 16px;
+    font-family: $font-family-roboto;
+    font-size: $font-size-xs;
+    border:1px solid transparent;
+    border-radius: 5px;
+    background-color: $color-blue-light;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-black;
+      background-color: transparent;
+      border: 1px solid $color-blue-light;
     }
   }
 
