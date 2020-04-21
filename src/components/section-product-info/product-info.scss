@@ -1,6 +1,17 @@
 @import "../../common/sass/mixins";
 
+.product-info {
+  background-image: url('../../assets/img/bg-vector.svg'),
+  url('../../assets/img/bg-vector2.svg');
+  background-repeat: no-repeat;
+  background-position: left 60%, right 40%;
+  @include laptop {
+    background-image: none;
+  }
+}
+
 .product-info-container {
+  position: relative;
   @include container();
 }
 
@@ -155,8 +166,9 @@
   @include tablet {
     flex-direction: row;
   }
+
   &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -165,6 +177,7 @@
   margin: 8px 0;
   border: 1px solid $color-grey-light;
   border-radius: 5px;
+  background-color: $color-white;
   @include laptop {
     flex-direction: column;
   }
@@ -284,6 +297,7 @@
       margin-right: -8px;
     }
   }
+
   .product-info-infographics-col {
     max-width: 50%;
     @include tablet {

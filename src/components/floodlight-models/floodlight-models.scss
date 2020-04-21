@@ -4,14 +4,39 @@
 }
 
 .floodlight-models-container {
+  position: relative;
   @include container(1046px, 40px);
   padding-top: 24px;
   padding-bottom: 24px;
+  background-color: $color-white;
   border: 1px solid $color-grey-light;
   border-radius: 5px;
+  z-index: 5;
   @include mobile {
     padding-left: 26px;
     padding-right: 26px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -136px;
+    left: -171px;
+    width: 171px;
+    height: 240px;
+    background-image: url('../../assets/img/vector.png');
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: -118px;
+    right: -171px;
+    width: 171px;
+    height: 196px;
+    background-image: url('../../assets/img/vector2.png');
+    background-repeat: no-repeat;
+    z-index: 1;
   }
 }
 
