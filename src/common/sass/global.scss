@@ -1,5 +1,8 @@
 @import "variables";
 // scss-lint:disable VendorPrefix
+* {
+  box-sizing: border-box;
+}
 
 html {
   direction: ltr;
@@ -7,16 +10,12 @@ html {
   -webkit-font-smoothing: antialiased;
   color: $color-black;
   font-family: $font-family-base;
-  font-display: swap;
   font-size: $font-size-default;
   font-weight: $font-weight-regular;
   line-height: 1.5;
   -webkit-overflow-scrolling: touch;
 }
 
-body {
-  margin: 0;
-}
 
 input,
 textarea,
@@ -24,15 +23,12 @@ button,
 select {
   color: $color-black;
   font-family: $font-family-base;
-  font-display: swap;
   font-size: $font-size-default;
   font-weight: $font-weight-regular;
   border-radius: 0;
   box-shadow: none;
   border: 0;
   background: none;
-  padding: 0;
-  margin: 0;
   outline: none;
 }
 
@@ -69,10 +65,6 @@ textarea {
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
 textarea {
   resize: none;
   overflow-y: auto;
@@ -102,6 +94,10 @@ h4 {
   font-family: $font-family-roboto-medium;
 }
 
+h5 {
+  font-family: $font-family-roboto-medium;
+  font-size: $font-size-xxs;
+}
 a {
   display: inline-block;
   text-decoration: none;

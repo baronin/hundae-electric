@@ -1,13 +1,13 @@
 @import "../../common/sass/mixins";
-.section-cards {
+.section-infographics {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.section-cards-container {
+.section-infographics-container {
   @include container(1070px);
 }
 
-.section-cards-row {
+.section-infographics-row {
   display: flex;
   flex-wrap: wrap;
   @include tablet {
@@ -15,7 +15,7 @@
   }
 }
 
-.section-cards-col {
+.section-infographics-col {
   display: flex;
   max-width: 25%;
   padding: 7px;
@@ -24,7 +24,7 @@
     padding: 5px 0;
   }
 
-  .section-cards-border {
+  .section-infographics-border {
     display: flex;
     width: 100%;
     padding: 20px 14px;
@@ -38,7 +38,7 @@
     }
 
   }
-  .card-image-holder {
+  .infographics-image-holder {
     @include laptop {
       margin-right: 0;
       margin-bottom: 16px;
@@ -49,19 +49,3 @@
     }
   }
 }
-
-/*
- @include laptop {
-      flex-direction: column;
-    }
-    @include tablet {
-      max-width: 100%;
-      flex-direction: row;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 8px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
- */

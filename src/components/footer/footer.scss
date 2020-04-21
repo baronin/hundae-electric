@@ -51,12 +51,15 @@
 
   & > a {
     font-family: $font-family-suisse-bold;
+    @include mobile {
+      font-family: $font-family-suisse-regular;
+    }
   }
 }
 
 .footer-list-inner {
   @include mobile {
-    display: none !important; // TODO Need fix important
+    display: none;
   }
 
   a {
@@ -100,7 +103,9 @@
   .footer-list-inner {
     display: flex;
     flex-wrap: wrap;
-
+    @include mobile {
+      display: none;
+    }
   }
 
   li {
@@ -136,7 +141,7 @@
     }
 
     .footer-list-inner {
-      display: block !important; // TODO Need fix important
+      display: block;
     }
   }
 }
@@ -145,6 +150,7 @@
   padding-top: 30px;
   border-top: 1px solid $color-grey-light;
   font-size: $font-size-xxs;
+
   p {
     font-family: $font-family-suisse-regular;
   }
