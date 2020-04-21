@@ -1,4 +1,4 @@
-@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
 
 .main-news {
   border-top: 1px solid $color-grey-light;
@@ -7,6 +7,11 @@
 
 .main-news-container {
   @include container();
+
+  h1 {
+    font-family: $font-family-roboto-medium;
+    margin-bottom: 10px;
+  }
 }
 
 .main-news-content {
@@ -14,4 +19,7 @@
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
+  @include mobile {
+    flex-direction: column;
+  }
 }

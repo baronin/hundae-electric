@@ -3,18 +3,20 @@
   display: inline-block;
   text-align: center;
   font-size: $font-size-xxs;
+  font-family: $font-family-roboto;
   padding: 8px 16px;
   color: inherit;
   background-color: transparent;
+  border-radius: 5px;
   outline: none;
   transition: 0.3s;
   cursor: pointer;
+
 }
 
 .btn-outline-primary {
   color: $color-black;
   border: 1px solid $color-blue-light;
-  border-radius: 5px;
   &:hover {
     color: $color-white;
     border-color: transparent;
@@ -24,11 +26,8 @@
 
 .btn-primary {
   color: $color-white;
-  font-family: $font-family-roboto;
   font-size: $font-size-xs;
-  border-radius: 5px;
   background-color: $color-blue-light;
-
   &:hover {
     background-color: $color-blue-light20;
   }
@@ -39,12 +38,36 @@
   }
 }
 
+.btn-dark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px 8px 42px;
+  line-height: 20px;
+  color: $color-white;
+  font-size: $font-size-m;
+  background-color: $color-dark-blue;
+  &:hover {
+    background-color: hsla(234, 34, 16, 0.8);
+  }
+  &:focus,
+  &:active {
+    background-color: hsla(234, 34, 16, 0.9);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 8px;
+    background-image: url("../../assets/img/icons/arrow-pagination.svg");
+    left: 10px;
+  }
+}
+
 .btn-outline-info {
   color: $color-white;
   font-size: $font-size-xs;
   border: 1px solid $color-lightgreen;
-  border-radius: 5px;
-
   &:hover {
     background-color: $color-lightgreen;
   }
