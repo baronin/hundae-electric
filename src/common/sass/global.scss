@@ -16,7 +16,6 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
-
 input,
 textarea,
 button,
@@ -106,6 +105,12 @@ p {
 
 b {
   font-weight: bold;
+}
+
+i {
+  font-size: $font-size-m;
+  font-style: italic;
+  color: $color-grey;
 }
 
 img {
