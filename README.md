@@ -1,7 +1,9 @@
 # hundae-electric
 
 ### pages
-http://localhost:3000/product.html
+[index](https://hundae-electric.netlify.app)
+[product](https://hundae-electric.netlify.app/product.html)
+[news-list](https://hundae-electric.netlify.app/news-list.html)
 
 ## Gulp boilerplate
 > All you need for static website coding. Includes live reload, SASS,  autoprefixer, EJS/PUG template engines, images reducing, JS/SASS linters, FTP deployment, JS bundling with browserify, ES2015+ ready, JS/CSS minification.*

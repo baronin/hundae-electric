@@ -1,0 +1,28 @@
+.buttons-filter-list {
+  margin-right: -6px;
+  margin-left: -6px;
+
+  .is-active {
+    color: $color-white;
+    background-color: $color-dark-blue;
+  }
+}
+
+.btn-filter {
+  display: inline-block;
+  padding: 4px 16px;
+  margin: 8px 6px;
+  color: $color-dark-blue;
+  background-color: $color-grey-light;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-grey;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid $color-dark-blue;
+  }
+}

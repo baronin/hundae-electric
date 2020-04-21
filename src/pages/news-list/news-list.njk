@@ -1,0 +1,28 @@
+{% from 'common/njk/head.njk' import head %}
+{% from 'common/njk/scripts.njk' import scripts %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+{{ head('index', 'hundae-electric') }}
+
+<body>
+{% include "components/header/header.njk" %}
+<main class="main-news">
+  <div class="main-news-container">
+    {% include "components/breadcrumbs/breadcrumbs.njk" %}
+    <h1>Новости</h1>
+    {% include "components/button-filter/button-filter.njk" %}
+    <div class="main-news-content">
+      {% include "components/section-news-list/section-news-list.njk" %}
+      {% include "components/aside-news/aside-news.njk" %}
+    </div>
+    {% include "components/pagination/pagination.njk" %}
+  </div>
+</main>
+{% include "components/footer/footer.njk" %}
+
+{{ scripts('index') }}
+</body>
+
+</html>

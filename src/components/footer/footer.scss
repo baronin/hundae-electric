@@ -3,6 +3,12 @@
 .footer {
   padding-top: 38px;
   padding-bottom: 38px;
+
+  & > {
+    .footer-container {
+      padding-bottom: 30px;
+    }
+  }
 }
 
 .footer-container {
@@ -19,6 +25,9 @@
     line-height: 1.2;
     margin-bottom: 16px;
     color: black;
+    &:hover {
+      color: $color-blue;
+    }
   }
 
   & > a {

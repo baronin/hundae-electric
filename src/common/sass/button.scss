@@ -1,11 +1,11 @@
 @import "variables";
 .btn {
+  display: inline-block;
   text-align: center;
   font-size: $font-size-xxs;
   padding: 8px 16px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid transparent;
   outline: none;
   transition: 0.3s;
   cursor: pointer;
