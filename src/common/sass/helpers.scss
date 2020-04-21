@@ -23,12 +23,13 @@
   text-transform: uppercase;
 }
 
-.text-link {
+.read-more {
   padding-top: 10px;
   color: $color-black;
   text-decoration: underline;
 
   &:hover {
+    color: $color-grey;
     text-decoration: none;
   }
 }

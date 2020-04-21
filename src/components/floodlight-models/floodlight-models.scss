@@ -60,6 +60,7 @@
     color: $color-black;
     line-height: 20px;
     &:hover {
+      color: $color-blue-light;
       text-decoration: underline;
     }
   }

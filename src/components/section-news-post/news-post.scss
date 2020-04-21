@@ -32,6 +32,7 @@
   h4 {
     font-size: $font-size-m;
     line-height: 1.2;
+    margin-bottom: 8px;
   }
 }
 
@@ -53,5 +54,9 @@
     .news-posts-img {
       max-width: 100%;
     }
+  }
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
   }
 }
