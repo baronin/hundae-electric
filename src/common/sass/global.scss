@@ -21,13 +21,10 @@ input,
 textarea,
 button,
 select {
-  color: $color-black;
   font-family: $font-family-base;
-  font-size: $font-size-default;
-  font-weight: $font-weight-regular;
   border-radius: 0;
   box-shadow: none;
-  border: 0;
+  border: 1px solid transparent;
   background: none;
   outline: none;
 }

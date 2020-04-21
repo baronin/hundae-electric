@@ -1,0 +1,21 @@
+@import "../../common/sass/variables";
+
+.news-aside {
+  max-width: 242px;
+  width: 100%;
+}
+.aside-question {
+  padding: 70px 28px 80px 40px;
+  background-color: #F5F6F8;
+  border-radius: 3px;
+
+  h3 {
+    font-family: $font-family-roboto;
+    font-weight: normal;
+    margin-bottom: 12px;
+  }
+}
+.aside-question-img {
+  max-width: 65px;
+  margin-bottom: 12px;
+}

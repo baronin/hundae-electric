@@ -1,0 +1,67 @@
+@import "../../common/sass/variables";
+
+.pagination {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pagination-link {
+  padding: 9px 12px;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: center;
+  font-size: $font-size-m;
+  color: $color-dark-blue;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  transition: ease 0.5s;
+  &:hover {
+    background-color: hsl(73, 80, 61);
+  }
+
+  &:focus,
+  &:active {
+    border-color: $color-blue-light;
+    background-color: hsl(73, 90, 61);
+  }
+  &.is-active {
+    background-color: $color-yellow;
+    &:active,
+    &:focus {
+      border-color: $color-dark-blue;
+    }
+  }
+}
+
+.pagination-prev,
+.pagination-next {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.pagination-prev {
+  padding-left: 40px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 8px;
+    background-image: url("../../assets/img/icons/arrow-pagination.svg");
+    left: 5px;
+  }
+}
+
+.pagination-next {
+  padding-right: 40px;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 8px;
+    background-image: url("../../assets/img/icons/arrow-pagination.svg");
+    right: 5px;
+    transform: rotate(180deg);
+  }
+}

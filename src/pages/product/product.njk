@@ -8,8 +8,10 @@
 
 <body>
 {% include "components/header/header.njk" %}
-<main class="main">
-  {% include "components/section-product-info/product-info.njk" %}
+<main class="main main-news">
+  <div class="news-container">
+    {% include "components/section-product-info/product-info.njk" %}
+  </div>
 </main>
 {% include "components/footer/footer.njk" %}
 

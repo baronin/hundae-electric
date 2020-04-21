@@ -1,0 +1,17 @@
+@import "../../common/sass/variables";
+
+.main-news {
+  border-top: 1px solid $color-grey-light;
+  border-bottom: 1px solid $color-grey-light;
+}
+
+.main-news-container {
+  @include container();
+}
+
+.main-news-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
