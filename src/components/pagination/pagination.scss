@@ -1,8 +1,10 @@
-@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
 
 .pagination {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: 20px;
 }
 
 .pagination-link {
@@ -39,10 +41,17 @@
   display: inline-flex;
   align-items: center;
   position: relative;
+  @include mobile {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .pagination-prev {
   padding-left: 40px;
+  @include mobile {
+    left: 0;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -55,6 +64,9 @@
 
 .pagination-next {
   padding-right: 40px;
+  @include mobile {
+    right: 0;
+  }
   &:after {
     content: '';
     position: absolute;
