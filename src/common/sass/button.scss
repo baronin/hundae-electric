@@ -2,65 +2,56 @@
 .btn {
   text-align: center;
   font-size: $font-size-xxs;
-  padding: 6px 15px;
-  cursor: pointer;
+  padding: 8px 16px;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid transparent;
   outline: none;
-  color: $color-white;
+  transition: 0.3s;
+  cursor: pointer;
+}
 
-
-  &.btn-blue {
-    color: $color-black;
-    border: 1px solid $color-blue-light;
-    border-radius: 5px;
-    transition: 0.3s;
-
-    &:hover {
-      color: $color-white;
-      border-color: transparent;
-      background-color: $color-blue-light;
-    }
-  }
-
-  &.btn-blue-bg {
-    padding: 12px 32px;
-    font-family: $font-family-roboto-medium;
-    font-size: $font-size-m;
-    border:1px solid transparent;
-    border-radius: 5px;
-    background-color: $color-blue-light;
-    transition: 0.3s;
-
-    &:hover {
-      color: $color-black;
-      background-color: transparent;
-      border: 1px solid $color-blue-light;
-    }
-  }
-
-  &.btn-blue-bg-small {
-    padding: 8px 16px;
-    font-family: $font-family-roboto;
-    font-size: $font-size-xs;
-    border:1px solid transparent;
-    border-radius: 5px;
-    background-color: $color-blue-light;
-    transition: 0.3s;
-
-    &:hover {
-      color: $color-black;
-      background-color: transparent;
-      border: 1px solid $color-blue-light;
-    }
-  }
-
-  &.btn-green {
+.btn-outline-primary {
+  color: $color-black;
+  border: 1px solid $color-blue-light;
+  border-radius: 5px;
+  &:hover {
     color: $color-white;
-    font-size: $font-size-xs;
-    border: 1px solid $color-lightgreen;
-    border-radius: 5px;
-
-    &:hover {
-      background-color: $color-lightgreen;
-    }
+    border-color: transparent;
+    background-color: $color-blue-light;
   }
+}
+
+.btn-primary {
+  color: $color-white;
+  font-family: $font-family-roboto;
+  font-size: $font-size-xs;
+  border-radius: 5px;
+  background-color: $color-blue-light;
+
+  &:hover {
+    background-color: $color-blue-light20;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $color-blue;
+  }
+}
+
+.btn-outline-info {
+  color: $color-white;
+  font-size: $font-size-xs;
+  border: 1px solid $color-lightgreen;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $color-lightgreen;
+  }
+}
+
+.btn-lg {
+  font-family: $font-family-roboto-medium;
+  padding: 12px 32px;
+  font-size: $font-size-m;
 }

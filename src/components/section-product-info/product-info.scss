@@ -147,12 +147,16 @@
   padding: 20px 14px;
   border: 1px solid $color-grey-light;
   border-radius: 5px;
+  transition: 0.3s;
   @include laptop {
     flex-direction: column;
     text-align: center;
   }
   @include tablet {
     flex-direction: row;
+  }
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
 }
 
