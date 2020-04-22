@@ -1,14 +1,7 @@
 @import "../../common/sass/mixins";
 
 .section-news {
-  max-width: 758px;
   width: 100%;
-  @include laptop {
-    max-width: 65%;
-  }
-  @include mobile {
-    max-width: 100%;
-  }
 
   h2 {
     margin-bottom: 24px;

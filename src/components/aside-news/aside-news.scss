@@ -1,22 +1,27 @@
 @import "../../common/sass/variables";
 
 .news-aside {
+  flex-shrink: 0;
   max-width: 242px;
   width: 100%;
+  margin-left: 20px;
   @include laptop {
     max-width: 30%;
   }
   @include mobile {
     max-width: 100%;
+    margin-left: 0;
   }
 }
 .aside-question {
   padding: 70px 28px 80px 40px;
   background-color: #F5F6F8;
   border-radius: 3px;
+  @include tablet {
+    padding: 22px;
+  }
   @include mobile {
     display: flex;
-    padding: 22px;
   }
 
   h3 {

@@ -16,10 +16,10 @@
 
 .main-news-content {
   display: flex;
-  justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
   @include mobile {
     flex-direction: column;
+    padding-bottom: 32px;
   }
 }
