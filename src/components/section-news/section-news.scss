@@ -35,36 +35,3 @@
     }
   }
 }
-
-.section-news-list {
-  margin-bottom: 60px;
-  @include tablet {
-    margin-bottom: 30px;
-  }
-
-  li {
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    font-size: $font-size-m;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 12px;
-      left: 0;
-      width: 10px;
-      height: 10px;
-      background-color: $color-blue;
-      border-radius: 50%;
-    }
-  }
-
-  a {
-    color: $color-blue-light;
-    &:hover {
-      color: $color-grey;
-    }
-  }
-}

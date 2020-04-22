@@ -1,0 +1,35 @@
+@import "../../common/sass/mixins";
+
+.nav-main {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  max-width: 185px;
+  width: 100%;
+  margin-right: 72px;
+  @include tablet {
+    max-width: 120px;
+    margin-right: 30px;
+  }
+  @include mobile {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  a {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $color-grey-light;
+    color: $color-black;
+    &:hover {
+      color: $color-blue;
+      border-bottom: 1px solid $color-blue-light;
+    }
+  }
+
+  .is-active {
+    border-bottom: 1px solid $color-blue;
+  }
+}

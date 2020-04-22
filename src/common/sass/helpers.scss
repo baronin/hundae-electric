@@ -1,4 +1,43 @@
-@import "variables";
+@import "mixins";
+
+.container {
+  @include container();
+}
+
+.wrapper {
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 38px;
+    font-size: $font-size-m;
+    color: $color-dark-blue;
+  }
+
+  img {
+    margin-bottom: 40px;
+  }
+  li {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  i {
+    line-height: 22px;
+  }
+}
+
+.wrapper-content {
+
+}
+
 .has-text-center {
   text-align: center;
 }
