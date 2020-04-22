@@ -1,0 +1,12 @@
+{% macro list(title='null', desc='null') %}
+
+<li>
+  {% if title != 'null' %}
+    <h4>{{ title }}</h4>
+  {% endif %}
+  {% if desc != 'null' %}
+    <p>{{ desc }}</p>
+  {% endif %}
+</li>
+
+{% endmacro %}
