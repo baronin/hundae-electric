@@ -34,26 +34,41 @@
       margin-bottom: 0;
     }
   }
-
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
   label {
     position: relative;
     width: 100%;
+    transition: 0.2s ease all;
     &.error {
       position: absolute;
+      top: 100%;
+      left: 0;
+      padding-top: 3px;
       font-family: $font-family-roboto;
       font-size: $font-size-xs;
-      transition: 0.2s ease all;
-      pointer-events: none;
-      left: 0;
-      top: 100%;
       color: $color-red;
+      border-top: 2px solid $color-red;
     }
+  }
 
-    &#phone-error:before {
+  .clear-input-button {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 68px;
+    &:before {
       content: '';
       position: absolute;
-      top: -40px;
-      right: 16px;
+      top: -48px;
+      right: 0;
       width: 18px;
       height: 18px;
       background-image: url("../../assets/img/icons/icons-error-close.svg");
@@ -98,6 +113,13 @@
         transform: translate(-12%, -100%) scale(0.75);
       }
     }
+
+    &:focus,
+    &:valid {
+      ~ .clear-input-button {
+        display: block;
+      }
+    }
   }
 
   textarea {
@@ -116,7 +138,7 @@
     }
   }
 
-  button {
+  .btn {
     margin: 8px;
   }
 }

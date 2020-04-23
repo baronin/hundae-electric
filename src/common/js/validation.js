@@ -19,8 +19,8 @@ const formValidationOptions = {
         },
         phone: {
             required: 'Поле обязательно для заполнения',
-            minlength: 'Номер должен содержать не менее 11 цифр: +7(000) 000 00 00',
-            maxlength: 'Номер должен содержать не более 11 цифр: +7(000) 000 00 00',
+            minlength: 'Номер должен содержать не менее 11 цифр',
+            maxlength: 'Номер должен содержать не более 11 цифр',
             number: 'Введите только номер телефона: +7(000) 000 00 00',
         },
     },
@@ -30,6 +30,9 @@ $(document)
     .ready(() => {
         const $form = $('#form');
         if ($form) {
+            $('.js-clear').click(() => {
+                $('input[name*="phone"]').val('');
+            })
             $form.validate(formValidationOptions);
         }
     })
