@@ -14,19 +14,8 @@
     margin-bottom: 20px;
   }
 
-  p {
-    margin-bottom: 38px;
-    font-size: $font-size-m;
-    color: $color-dark-blue;
-  }
-
-  img {
+  .img-responsive {
     margin-bottom: 40px;
-  }
-  li {
-    p {
-      margin-bottom: 0;
-    }
   }
 
   i {
@@ -35,7 +24,11 @@
 }
 
 .wrapper-content {
-
+  & > p {
+    margin-bottom: 38px;
+    font-size: $font-size-m;
+    color: $color-dark-blue;
+  }
 }
 
 .has-text-center {
@@ -50,7 +43,7 @@
   text-align: right;
 }
 
-.logo-img {
+.img-responsive {
   width: 100%;
   display: block;
   height: auto;

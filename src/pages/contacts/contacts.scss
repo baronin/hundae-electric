@@ -1,0 +1,88 @@
+@import "../../common/sass/mixins";
+
+.contacts-infographics-row {
+  margin-bottom: 38px;
+}
+
+.form-holder {
+  padding: 28px 35px;
+  border: 1px solid $color-grey-light;
+  border-radius: 3px;
+  @include mobile {
+    padding: 16px;
+  }
+
+  h4 {
+    font-family: $font-family-roboto-bold;
+  }
+}
+
+.callback-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+
+  .input-group {
+    position: relative;
+    margin: 20px 8px;
+    max-width: calc(50% - 18px);
+    width: 100%;
+    @include tablet {
+      max-width: 100%;
+      margin-top: 28px;
+      margin-bottom: 0;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    font-family: $font-family-roboto;
+    font-size: $font-size-xs;
+    color: $color-grey;
+    transition: 0.2s ease all;
+    pointer-events: none;
+  }
+
+  .input-group,
+  textarea {
+    font-family: $font-family-roboto-medium;
+    font-size: $font-size-s;
+    background-color: $color-grey-light;
+    border-radius: 3px;
+    &::placeholder {
+      font-family: $font-family-roboto;
+      font-size: $font-size-xs;
+      color: $color-grey;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 20px 16px;
+    font-family: $font-family-roboto-medium;
+    font-size: $font-size-s;
+    &:focus,
+    &:valid{
+      ~ label {
+        transform: translate(-12%, -100%) scale(0.75);
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    padding: 20px 16px;
+    margin: 20px 8px 40px;
+    @include tablet {
+      margin-top: 28px;
+      margin-bottom: 28px;
+    }
+  }
+
+  button {
+    margin: 8px;
+  }
+}
