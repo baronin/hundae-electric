@@ -41,7 +41,6 @@
   width: 100%;
   padding: 9px;
   color: $color-black;
-  transition: all 400ms ease-in-out;
   @include tablet {
     max-width: 50%;
   }
@@ -55,10 +54,5 @@
     .news-posts-img {
       max-width: 100%;
     }
-  }
-  &:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transform: translateY(-10px);
-    border-radius: 5px;
   }
 }
