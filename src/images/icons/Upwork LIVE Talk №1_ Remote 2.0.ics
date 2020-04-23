@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//LogMeIn//GoToWebinar//EN
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Europe/Bucharest
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Bucharest
+X-LIC-LOCATION:Europe/Bucharest
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:EEST
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:EET
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200423T083925Z
+DTSTART;TZID=Europe/Bucharest:20200430T120000
+DTEND;TZID=Europe/Bucharest:20200430T133000
+SUMMARY:GoToWebinar - Upwork LIVE Talk №1: Remote 2.0
+LOCATION:GoToWebinar - See conference call information below
+UID:-1946312931@logmein.com
+ORGANIZER:upworkwebinars@upwork.com
+DESCRIPTION:1. Click and join at the specified time and date:\nhttps://gl
+ obal.gotowebinar.com/join/6135417126248456206/262555050\nNote: This link
+  should not be shared with others\; it is unique to you.\n\nWe are excit
+ ed to launch a new online event format to support local talent communiti
+ es: a series of five Upwork LIVE Talks featuring top freelance community
+  leaders from Ukraine. \n\nThe first Upwork LIVE Talk: Remote 2.0. will 
+ take place on Thursday\, April 30\, 2020 at 12:00 PM with our special gu
+ est Denys Safonov.\nDenys is an experienced Top Rated freelancer\, digit
+ al nomad and founder of ‘Etcetera’\, one of the top Design & Creative Ag
+ encies on Upwork from Ukraine. He knows from his own experience that rem
+ ote management is a winning strategy. Learn about effective tools that h
+ e’s using and listen to his inspiring story and practical tips\, includi
+ ng: \n\n- How to manage a fully remote team and agency\n- Work-life bala
+ nce\n- Tools to help you run a successful remote business \n \nUpwork LI
+ VE Talk: Remote 2.0 \nEvent language: Ukrainian\, Russian \nDate & Time:
+   April 30\, 2020 at 12:00 PM\n\nTickets for this free event will sell o
+ ut quickly\, so make sure to RSVP right away to save your seat. \n\nSee 
+ you there\,\nKateryna Bozhkova\n
+X-ALT-DESC;FMTTYPE=text/html:<HTML><HEAD><TITLE></TITLE><BODY><FONT SIZE=
+ 2><b>1. Click and join at the specified time and date:</b></FONT><BR><FO
+ NT SIZE=2>https://global.gotowebinar.com/join/6135417126248456206/262555
+ 050</FONT><BR><FONT SIZE=2>Note: This link should not be shared with oth
+ ers\; it is unique to you.</FONT><BR><BR><FONT SIZE=2>We are excited to 
+ launch a new online event format to support local talent communities: a 
+ series of five Upwork LIVE Talks featuring top freelance community leade
+ rs from Ukraine. \n\nThe first Upwork LIVE Talk: Remote 2.0. will take p
+ lace on Thursday\, April 30\, 2020 at 12:00 PM with our special guest De
+ nys Safonov.\nDenys is an experienced Top Rated freelancer\, digital nom
+ ad and founder of ‘Etcetera’\, one of the top Design & Creative Agencies
+  on Upwork from Ukraine. He knows from his own experience that remote ma
+ nagement is a winning strategy. Learn about effective tools that he’s us
+ ing and listen to his inspiring story and practical tips\, including: \n
+ \n- How to manage a fully remote team and agency\n- Work-life balance\n-
+  Tools to help you run a successful remote business \n \nUpwork LIVE Tal
+ k: Remote 2.0 \nEvent language: Ukrainian\, Russian \nDate & Time:  Apri
+ l 30\, 2020 at 12:00 PM\n\nTickets for this free event will sell out qui
+ ckly\, so make sure to RSVP right away to save your seat. \n\nSee you th
+ ere\,\nKateryna Bozhkova</FONT><BR></BODY></HTML>
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

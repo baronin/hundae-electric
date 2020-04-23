@@ -34,16 +34,47 @@
       margin-bottom: 0;
     }
   }
-
-  label {
+  .highlight {
     position: absolute;
-    top: 20px;
-    left: 16px;
-    font-family: $font-family-roboto;
-    font-size: $font-size-xs;
-    color: $color-grey;
-    transition: 0.2s ease all;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
     pointer-events: none;
+    opacity: 0.5;
+  }
+  label {
+    position: relative;
+    width: 100%;
+    transition: 0.2s ease all;
+    &.error {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding-top: 3px;
+      font-family: $font-family-roboto;
+      font-size: $font-size-xs;
+      color: $color-red;
+      border-top: 2px solid $color-red;
+    }
+  }
+
+  .clear-input-button {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 68px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -48px;
+      right: 0;
+      width: 18px;
+      height: 18px;
+      background-image: url("../../assets/img/icons/icons-error-close.svg");
+      cursor: pointer;
+      z-index: 10;
+    }
   }
 
   .input-group,
@@ -52,11 +83,14 @@
     font-size: $font-size-s;
     background-color: $color-grey-light;
     border-radius: 3px;
-    &::placeholder {
-      font-family: $font-family-roboto;
-      font-size: $font-size-xs;
-      color: $color-grey;
-    }
+  }
+
+  .input-placeholder {
+    position: absolute;
+    left: 16px;
+    top: 20px;
+    color: $color-grey;
+    font-family: $font-family-roboto;
   }
 
   input {
@@ -64,10 +98,26 @@
     padding: 20px 16px;
     font-family: $font-family-roboto-medium;
     font-size: $font-size-s;
+
+    &::placeholder {
+      font-family: $font-family-roboto;
+      font-size: $font-size-s;
+      color: $color-grey;
+    }
+
     &:focus,
-    &:valid{
-      ~ label {
+    &:valid {
+      ~ .input-placeholder {
+        position: absolute;
+        display: block;
         transform: translate(-12%, -100%) scale(0.75);
+      }
+    }
+
+    &:focus,
+    &:valid {
+      ~ .clear-input-button {
+        display: block;
       }
     }
   }
@@ -80,9 +130,15 @@
       margin-top: 28px;
       margin-bottom: 28px;
     }
+
+    &::placeholder {
+      font-family: $font-family-roboto;
+      font-size: $font-size-xs;
+      color: $color-grey;
+    }
   }
 
-  button {
+  .btn {
     margin: 8px;
   }
 }
