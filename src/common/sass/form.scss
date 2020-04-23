@@ -1,0 +1,134 @@
+.form {
+  label {
+    position: relative;
+    width: 100%;
+    transition: 0.2s ease all;
+
+    &.error {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding-top: 3px;
+      font-family: $font-family-roboto;
+      font-size: $font-size-xs;
+      color: $color-red;
+      border-top: 2px solid $color-red;
+      transition:0.2s ease all;
+    }
+
+    &[for="name"]:after,
+    &[for="email"]:after {
+      content: '*';
+      margin-left: 3px;
+      color: $color-red;
+    }
+  }
+  .clear-input-button {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 68px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -48px;
+      right: 0;
+      width: 18px;
+      height: 18px;
+      background-image: url("../../assets/img/icons/icons-error-close.svg");
+      cursor: pointer;
+      z-index: 10;
+    }
+  }
+
+  .input-group,
+  textarea {
+    background-color: $color-grey-light;
+    border-radius: 3px;
+  }
+
+  .input-group {
+    position: relative;
+  }
+
+  .input-placeholder,
+  .input-placeholder-file{
+    position: absolute;
+    left: 16px;
+    top: 20px;
+    color: $color-grey;
+    font-family: $font-family-roboto;
+  }
+
+  input {
+    width: 100%;
+    padding: 20px 16px;
+
+    &::placeholder {
+      font-family: $font-family-roboto;
+      font-size: $font-size-s;
+      color: $color-grey;
+    }
+
+    &:focus,
+    &:valid {
+      ~ .input-placeholder {
+        position: absolute;
+        display: block;
+        transform: translate(-12%, -100%) scale(0.75);
+      }
+    }
+
+    &:focus,
+    &:valid {
+      ~ .clear-input-button {
+        display: block;
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    padding: 20px 16px;
+    @include tablet {
+      margin-top: 28px;
+      margin-bottom: 28px;
+    }
+
+    &::placeholder {
+      font-family: $font-family-roboto;
+      font-size: $font-size-xs;
+      color: $color-grey;
+    }
+  }
+}
+
+.input-file {
+  color: transparent;
+  &::before {
+    content: 'Выберите файл';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-block;
+    padding: 8px 16px;
+    color: $color-dark-blue;
+    border: 1px solid $color-blue;
+    border-radius: 5px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-color: red;
+    }
+  }
+  &:active {
+    outline: 0;
+  }
+}
+
+.input-file::-webkit-file-upload-button {
+  visibility: hidden;
+}

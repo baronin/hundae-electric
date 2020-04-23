@@ -8,12 +8,14 @@
 @import "common/sass/global";
 @import "common/sass/helpers";
 @import "common/sass/button";
+@import "common/sass/form";
 
 // Components
 @import "components/hamburger/hamburger";
 @import "components/list/list";
 @import "components/pagination/pagination";
 @import "components/card/card";
+@import "components/modal/modal";
 @import "components/header/header";
 @import "components/hero/hero";
 @import "components/section-infographics/section-infographics";
