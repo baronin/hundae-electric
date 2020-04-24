@@ -46,9 +46,26 @@ function closeModal() {
 
     previousActiveElement.focus();
 }
-const BTN = '.btn-outline-primary'
+
+const BTN = '.btn-outline-primary' // TODO this need fix
 if ($(BTN)) {
     $(BTN).on("click", () => {
         openModal()
     });
 }
+
+const floatInputLabel = () => {
+    if ($('form > input')) {
+        $('.input').on('focusin', function () {
+            $(this).parent().find('.label-placeholder').not(".error").addClass('active');
+        });
+
+        $('.input').on('focusout', function () {
+            if (!this.value) {
+                $(this).parent().find('.label-placeholder').not(".error").removeClass('active');
+            }
+        });
+    }
+}
+
+floatInputLabel();

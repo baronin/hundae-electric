@@ -1,19 +1,23 @@
-.is-hidden {
-  overflow: hidden;
-}
+@import "../../common/sass/mixins";
 
 .modal {
   display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  overflow-y: auto;
+
   &.is-opened {
     display: block;
   }
 }
 
 .modal-window {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 40px auto;
   background-color: $color-white;
   border-radius: 5px;
   z-index: 101;
@@ -21,7 +25,8 @@
     margin-bottom: 12px;
   }
 
-  p {
+  & > p {
+    line-height: 18px;
     margin-bottom: 24px;
   }
 }
@@ -38,58 +43,27 @@
 }
 
 .modal-callback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 464px;
   height: 400px;
   padding: 42px 70px;
+  margin: 0;
+  @include mobile {
+    position: relative;
+    margin: 20px auto;
+    top: auto;
+    left: auto;
+    transform: none;
+    max-width: 90%;
+    padding: 20px;
+  }
+
   .input-group {
     max-width: 100%;
     margin-bottom: 30px;
   }
 }
 
-.modal-form {
-  max-width: 690px;
-  width: 100%;
-  padding: 42px 50px;
-
-  .form {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-  }
-
-  .input-group {
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-bottom: 20px;
-    &:not(.file-group) {
-      display: inline-block;
-      max-width: calc(50% - 18px);
-      width: 100%;
-      @include tablet {
-        max-width: 100%;
-      }
-    }
-  }
-
-  .file-group {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  input {
-    font-family: $font-family-roboto;
-    font-size: $font-size-xs;
-  }
-
-  textarea {
-    margin-bottom: 20px;
-  }
-
-  textarea,
-  .btn {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-}

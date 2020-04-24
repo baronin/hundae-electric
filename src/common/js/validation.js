@@ -29,18 +29,20 @@ const formValidationOptions = {
         },
         email: {
             required: "Поле обязательно для заполнения",
-            email: "Поле обязательно для заполнения",
+            email: "Не верный адрес электронной почты",
         }
     },
 };
 
 $(document)
     .ready(() => {
-        const $form = $('.form');
-        if ($form) {
-            $('.js-clear').click(() => {
-                $('input').val('');
+        const $forms = $('.form');
+        if ($forms) {
+            $forms.each((_, form) => {
+                $('.js-clear-button').click(() => {
+                    $('.input').val(''); // TODO Maybe it can be done better.
+                })
+                $(form).validate(formValidationOptions);
             })
-            $form.validate(formValidationOptions);
         }
     })

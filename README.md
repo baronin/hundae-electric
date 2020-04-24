@@ -88,3 +88,6 @@ Code Sample:
 #### Linters
 * [SCSS-Lint](https://github.com/brigade/scss-lint), NOTE: You need to install Ruby.
 * [ESLint](https://github.com/eslint/eslint)
+
+#### Plugins
+* [jqueryvalidation](https://jqueryvalidation.org/documentation/)

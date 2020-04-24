@@ -1,65 +1,67 @@
 <div class="modal">
-  <div class="modal-window modal-form">
+  <div class="modal-window modal-send-request">
     <button type="button" class="btn-close is-btn-close"></button>
     <h3>Отпрвить запрос</h3>
-    <p>Комбинированный аппарат, состоящий из охлаждающего вентилятора, достаточного для неогра- ниченного непрерывного
+    <p>Комбинированный аппарат, состоящий из охлаждающего вентилятора, достаточного для неогра- ниченного
+      непрерывного
       освещения, конструкции головной части прожектора, обеспечивающей </p>
     <form action="" class="form">
       <div class="input-group">
         <input id="name"
-               class="js-user-name"
+               class="input"
                name="name"
                type="text"
                minlength="1"
                maxlength="16"
                required>
-        <label for="name" class="input-placeholder">Контактное лицо</label>
+        <label for="name" class="label-placeholder">Контактное лицо</label>
       </div>
       <div class="input-group">
         <input id="company"
-               class="js-user-name"
+               class="input"
                name="name"
                type="text"
                minlength="1"
                maxlength="16"
                required>
-        <label for="company" class="input-placeholder">Название организации</label>
+        <label for="company" class="label-placeholder">Название организации</label>
       </div>
       <div class="input-group">
         <input id="city"
-               class="input-city"
+               class="input"
                name="name"
                type="text"
                minlength="1"
                maxlength="16"
                required>
-        <label for="city" class="input-placeholder">Город</label>
+        <label for="city" class="label-placeholder">Город</label>
       </div>
       <div class="input-group">
-        <input class="input-phone"
+        <input class="input js-mask-phone"
                id="phone"
                name="phone"
                type="tel"
                required>
-        <label for="phone" class="input-placeholder">Мобильный телефон</label>
-        <button class="clear-input-button js-clear" type="button"></button>
+        <label for="phone" class="label-placeholder">Мобильный телефон</label>
+        <button class="clear-input-button js-clear-button" type="button"></button>
       </div>
       <div class="input-group">
-        <input class="input-email"
+        <input class="input"
                id="email"
                name="email"
-               type="email">
-        <label for="email" class="input-placeholder">Эл. почта</label>
-        <button class="clear-input-button js-clear" type="button"></button>
+               type="email"
+               required>
+        <label for="email" class="label-placeholder">Эл. почта</label>
+        <button class="clear-input-button js-clear-button" type="button"></button>
       </div>
-      <div class="input-group file-group">
+      <div class="file-group">
+        <p>Прикрепить файл</p>
         <input class="input-file"
-               id="file"
-               name="file"
+               id="modal-file"
+               name="modal-file"
                type="file">
-        <label for="file" class="input-placeholder-file">Прикрепить файл</label>
       </div>
-      <textarea cols="16" rows="5" placeholder="Тектовое поле"></textarea>
+      <textarea class="textarea" cols="16" rows="5" placeholder="Тектовое поле"></textarea>
       <button class="btn btn-primary btn-lg" type="button">Жду звонка</button>
     </form>
   </div>
