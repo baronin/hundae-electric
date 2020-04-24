@@ -9,5 +9,6 @@ require("common/js/mask");
 require("common/js/validation");
 
 require("components/hamburger/hamburger");
+require("components/modal/modal");
 
 

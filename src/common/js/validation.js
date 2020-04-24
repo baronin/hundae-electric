@@ -10,6 +10,10 @@ const formValidationOptions = {
             minlength: 16,
             maxlength: 16,
         },
+        email: {
+            required: true,
+            email: "Поле обязательно для заполнения",
+        }
     },
     messages: {
         name: {
@@ -23,16 +27,22 @@ const formValidationOptions = {
             maxlength: 'Номер должен содержать не более 11 цифр',
             number: 'Введите только номер телефона: +7(000) 000 00 00',
         },
+        email: {
+            required: "Поле обязательно для заполнения",
+            email: "Не верный адрес электронной почты",
+        }
     },
 };
 
 $(document)
     .ready(() => {
-        const $form = $('#form');
-        if ($form) {
-            $('.js-clear').click(() => {
-                $('input[name*="phone"]').val('');
+        const $forms = $('.form');
+        if ($forms) {
+            $forms.each((_, form) => {
+                $('.js-clear-button').click(() => {
+                    $('.input').val(''); // TODO Maybe it can be done better.
+                })
+                $(form).validate(formValidationOptions);
             })
-            $form.validate(formValidationOptions);
         }
     })

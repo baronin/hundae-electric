@@ -1,0 +1,171 @@
+@import "../../common/sass/mixins";
+
+.form {
+  .clear-input-button {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 68px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -48px;
+      right: 0;
+      width: 18px;
+      height: 18px;
+      background-image: url("../../assets/img/icons/icons-error-close.svg");
+      cursor: pointer;
+      z-index: 10;
+    }
+  }
+
+  .input-group,
+  .textarea {
+    background-color: $color-grey-light;
+    border-radius: 3px;
+  }
+
+  .input-group {
+    position: relative;
+
+    label.error {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding-top: 3px;
+      margin-top: -1px;
+      font-family: $font-family-roboto;
+      font-size: $font-size-xs;
+      color: $color-red;
+      border-top: 2px solid $color-red;
+      transition:0.2s ease all;
+    }
+  }
+
+  .input {
+    width: 100%;
+    padding: 20px 16px;
+
+    &::placeholder {
+      font-family: $font-family-roboto;
+      font-size: $font-size-s;
+      color: $color-grey;
+    }
+
+    &:focus,
+    &:valid {
+      ~ .clear-input-button {
+        display: block;
+      }
+    }
+  }
+
+  .label-placeholder {
+    position: relative;
+    width: 100%;
+    transition: 0.2s ease all;
+
+    &[for="name"]:after,
+    &[for="email"]:after {
+      content: '*';
+      margin-left: 3px;
+      color: $color-red;
+    }
+  }
+
+  .label-placeholder.active {
+    position: absolute;
+    display: block;
+    transform: translate(-12%, -100%) scale(0.75);
+  }
+
+  .label-placeholder,
+  .label-placeholder-file{
+    position: absolute;
+    left: 16px;
+    top: 20px;
+    color: $color-grey;
+    font-family: $font-family-roboto;
+  }
+
+  .textarea {
+    width: 100%;
+    padding: 20px 16px;
+    @include tablet {
+      margin-top: 28px;
+      margin-bottom: 28px;
+    }
+
+    &::placeholder {
+      font-family: $font-family-roboto;
+      font-size: $font-size-xs;
+      color: $color-grey;
+    }
+  }
+}
+
+.file-group {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+  padding: 20px 16px;
+  background-color: $color-grey-light;
+  border-radius: 3px;
+  @include mobile {
+    padding-bottom: 0;
+  }
+}
+
+.input-file {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  max-width: 134px;
+  width: auto;
+  padding: 6px;
+  color: transparent;
+  transition: 0.3s;
+  @include mobile {
+    position: relative;
+    top: auto;
+    right: auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 0;
+  }
+  &::before {
+    content: 'Выберите файл';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 8px 16px;
+    color: $color-dark-blue;
+    border: 1px solid $color-blue;
+    border-radius: 5px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+    @include mobile {
+      position: relative;
+    }
+  }
+
+  &:hover:before {
+    color: $color-white;
+    background-color: $color-blue;
+  }
+  &:active {
+    outline: 0;
+  }
+}
+
+.input-file::-webkit-file-upload-button {
+  visibility: hidden;
+}

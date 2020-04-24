@@ -180,6 +180,10 @@
       }
     }
   }
+
+  .header-contact-phone {
+    display: none;
+  }
 }
 
 .header-nav-list {
@@ -262,10 +266,6 @@
       text-decoration: underline;
     }
   }
-}
-
-.header-contact-phone {
-  display: none;
 }
 
 .header-input-search {
