@@ -1,9 +1,13 @@
 $(document).ready(() => {
-    $('.your-class').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
+    $('.product-images').slick({
+        slidesToShow: 1,
+        asNavFor: '.product-images-dotted',
+        arrows: false
     })
+    $('.product-images-dotted').slick({
+        slidesToShow: 3,
+        asNavFor: '.product-images',
+        focusOnSelect: true,
+        arrows: false
+    });
 })
