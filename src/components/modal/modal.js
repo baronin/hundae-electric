@@ -48,19 +48,21 @@ function closeModal() {
 }
 
 const BTN = '.btn-outline-primary' // TODO this need fix
-if ($(BTN)) {
+if (MODAL) {
     $(BTN).on("click", () => {
         openModal()
     });
 }
 
+const INPUT_CLASS = $('.input');
+
 const floatInputLabel = () => {
     if ($('form > input')) {
-        $('.input').on('focusin', function () {
+        INPUT_CLASS.on('focusin', function () {
             $(this).parent().find('.label-placeholder').not(".error").addClass('active');
         });
 
-        $('.input').on('focusout', function () {
+        INPUT_CLASS.on('focusout', function () {
             if (!this.value) {
                 $(this).parent().find('.label-placeholder').not(".error").removeClass('active');
             }

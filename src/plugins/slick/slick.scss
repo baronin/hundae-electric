@@ -1,0 +1,31 @@
+.product-images {
+  max-width: 560px;
+}
+
+.slick-list {
+  max-height: 610px;
+}
+
+.product-images-dotted {
+  max-width: 560px;
+  transform: none;
+
+  .slick-list {
+    margin: 0 -12px;
+  }
+
+  .slick-slide {
+    padding: 0 12px;
+    cursor: pointer;
+    outline: none;
+
+    & > div {
+      max-height: 138px;
+      height: 100%;
+    }
+
+    img {
+      max-width: 138px;
+    }
+  }
+}
