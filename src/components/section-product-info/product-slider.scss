@@ -1,0 +1,47 @@
+.product-slide-main {
+  max-width: 560px;
+  img {
+    margin: 0 auto;
+  }
+}
+
+.slick-list {
+  max-height: 610px;
+}
+
+.product-slide-thmb {
+  max-width: 560px;
+  transform: none;
+
+  .slick-list {
+    margin: 0 -12px;
+  }
+
+  .slick-slide {
+    padding: 0 12px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+    &.slick-current {
+      opacity: 1;
+    }
+
+    & > div {
+      max-height: 138px;
+      height: 100%;
+    }
+
+    img {
+      max-width: 138px;
+    }
+  }
+}
+
+.product-slide-main,
+.product-slide-thmb {
+  display: none;
+}

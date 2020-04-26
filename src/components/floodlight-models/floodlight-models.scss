@@ -1,6 +1,9 @@
 @import "../../common/sass/mixins";
 .floodlight-models {
   padding: 20px 14px;
+  @include laptop {
+    overflow: hidden; // TODO NEED FIX
+  }
 }
 
 .floodlight-models-container {

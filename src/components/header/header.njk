@@ -26,56 +26,73 @@
       </div>
     </div>
     <div class="header-bottom">
-      <nav class="header-nav">
-        <div class="header-contact-phone">
-          <a class="link-phone" href="tel:+7 (495) 771-72-52" title="phone">+7 (495) 771-72-52</a>
-          <a href="#" class="btn btn-outline-primary">Обратный звонок</a>
-        </div>
-        <ul class="header-nav-list">
-          <li>
-            <a href="#">Каталог </a>
-            <ul class="header-nav-list-inner">
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Услуги </a>
-            <ul class="header-nav-list-inner">
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Отраслевые решения </a>
-            <ul class="header-nav-list-inner">
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Информация </a>
-            <ul class="header-nav-list-inner">
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Компания </a>
-            <ul class="header-nav-list-inner">
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-              <li><a href="#">Subnav Item</a></li>
-            </ul>
-          </li>
-        </ul>
-        {% include "components/hamburger/hamburger.njk" %}
-      </nav>
-      <input class="header-input-search" type="text">
+      <div class="header-bottom-wrap">
+        <nav class="header-nav">
+          <div class="header-menu">
+            <div class="header-menu-content">
+              <button type="button" class="btn btn-hamburger hamburger-close js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="header-contact-phone">
+                <a class="link-phone" href="tel:+7 (495) 771-72-52" title="phone">+7 (495) 771-72-52</a>
+                <a class="btn btn-outline-primary" href="#" >Обратный звонок</a>
+              </div>
+              <ul class="header-nav-list">
+                <li>
+                  <a href="#">Каталог </a>
+                  <ul class="header-nav-list-inner">
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Услуги </a>
+                  <ul class="header-nav-list-inner">
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Отраслевые решения </a>
+                  <ul class="header-nav-list-inner">
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Информация </a>
+                  <ul class="header-nav-list-inner">
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Компания </a>
+                  <ul class="header-nav-list-inner">
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="btn btn-hamburger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          {#{% include "components/hamburger/hamburger.njk" %}#}
+        </nav>
+        <input class="header-input-search" type="text">
+      </div>
     </div>
   </div>
 </header>

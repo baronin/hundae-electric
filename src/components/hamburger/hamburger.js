@@ -1,19 +1,15 @@
-const $hamburger = $("#js-hamburger");
-const $headerNav = $(".header-nav");
-const $body = $("body");
-const $hamburgerOpenClass = 'is-hamburger-open';
-const $hamburgerToggleClass = 'js-hamburger-toggle';
+const $hamburger = $(".js-hamburger");
+const $headerMenu = $(".header-menu");
+const isOpenClass = 'is-open';
 
 if ($hamburger) {
     $hamburger.on("click", () => {
-        $headerNav.toggleClass($hamburgerOpenClass);
-        $body.toggleClass($hamburgerToggleClass);
+        $headerMenu.toggleClass(isOpenClass);
     });
 }
 
 $(window).resize(function () {
-    if($(window).width() <= 768){
-        $($body).removeClass($hamburgerToggleClass);
-        $($headerNav).removeClass($hamburgerOpenClass);
-    };
+    if ($(window).width() <= 768) {
+        $headerMenu.removeClass(isOpenClass);
+    }
 });

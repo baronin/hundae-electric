@@ -48,10 +48,11 @@
   }
 }
 
-.product-content-gallery {
+.product-slider-wrap {
   max-width: 560px;
   width: 100%;
   margin-right: 54px;
+  overflow: hidden;
   @include laptop {
     max-width: 50%;
   }
@@ -61,7 +62,7 @@
   }
 }
 
-.product-content-gallery-thumbs {
+.product-slider-wrap-thumbs {
   max-width: 200px;
   height: 138px;
   margin-top: 34px;
@@ -182,8 +183,8 @@
     flex-direction: column;
   }
   @include tablet {
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
 
