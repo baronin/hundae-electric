@@ -1,7 +1,7 @@
 @import "variables";
 
 // Path fonts
-$pathFonts: "/assets/fonts";
+$pathFonts: "../../assets/fonts";
 
 // Fonts
 @mixin font($fontName, $weight, $style, $urlName) {
