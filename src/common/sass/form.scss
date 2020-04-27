@@ -7,7 +7,7 @@
     right: 16px;
     top: 68px;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: -48px;
       right: 0;
@@ -39,7 +39,7 @@
       font-size: $font-size-xs;
       color: $color-red;
       border-top: 2px solid $color-red;
-      transition:0.2s ease all;
+      transition: 0.2s ease all;
     }
   }
 
@@ -68,7 +68,7 @@
 
     &[for="name"]:after,
     &[for="email"]:after {
-      content: '*';
+      content: "*";
       margin-left: 3px;
       color: $color-red;
     }
@@ -81,7 +81,7 @@
   }
 
   .label-placeholder,
-  .label-placeholder-file{
+  .label-placeholder-file {
     position: absolute;
     left: 16px;
     top: 20px;
@@ -138,7 +138,7 @@
     padding: 10px 0;
   }
   &::before {
-    content: 'Выберите файл';
+    content: "Выберите файл";
     position: absolute;
     top: 0;
     right: 0;

@@ -8,12 +8,12 @@
 
 <body>
 {% include "components/header/header.njk" %}
-<main class="main-news">
-  <div class="main-news-container">
+<main class="main">
+  <div class="news-container">
     {% include "components/breadcrumbs/breadcrumbs.njk" %}
     <h1>Новости</h1>
     {% include "components/button-filter/button-filter.njk" %}
-    <div class="main-news-content">
+    <div class="news-content">
       {% include "components/section-news-list/section-news-list.njk" %}
       {% include "components/aside-news/aside-news.njk" %}
     </div>

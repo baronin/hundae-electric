@@ -1,0 +1,116 @@
+@import "../../common/sass/mixins";
+
+.product-info {
+  @include mobile {
+    padding-bottom: 40px;
+  }
+
+  .slick-list {
+    max-height: 610px;
+  }
+
+  .product-characteristics-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include mobile {
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.product-heading {
+  @include container();
+}
+
+.product-info-wrap {
+  @include container();
+  display: flex;
+  padding-bottom: 50px;
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    flex-direction: column;
+  }
+}
+
+.product-slider-wrap {
+  max-width: 560px;
+  width: 100%;
+  margin-right: 54px;
+  overflow: hidden;
+  @include laptop {
+    max-width: 50%;
+    margin-right: 40px;
+  }
+  @include tablet {
+    margin-right: 20px;
+  }
+  @include mobile {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+.product-slide-photo {
+  max-width: 560px;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.product-slider-wrap-thumbs {
+  max-width: 200px;
+  height: 138px;
+  margin-top: 34px;
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.product-slide-thumbs {
+  max-width: 560px;
+  transform: none;
+  @include mobile {
+    padding: 0 15px;
+  }
+
+  .slick-list {
+    margin: 0 -12px;
+  }
+
+  .slick-slide {
+    padding: 0 12px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.slick-current {
+      opacity: 1;
+    }
+
+    & > div {
+      max-height: 138px;
+      height: 100%;
+    }
+
+    img {
+      max-width: 138px;
+      @include mobile {
+        max-height: 113px;
+      }
+    }
+  }
+}
+
+.product-slide-photo,
+.product-slide-thumbs {
+  display: none;
+}

@@ -8,14 +8,16 @@ html {
   direction: ltr;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  color: $color-black;
+  color: $color-dark-blue;
   font-family: $font-family-base;
   font-size: $font-size-default;
   font-weight: $font-weight-regular;
   line-height: 1.5;
   -webkit-overflow-scrolling: touch;
 }
-
+body {
+  overflow-x: hidden;
+}
 input,
 textarea,
 button,
@@ -66,7 +68,10 @@ textarea {
   overflow-y: auto;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: bold;
 }
 
@@ -112,6 +117,7 @@ i {
   font-size: $font-size-m;
   font-style: italic;
   color: $color-grey;
+  line-height: 22px;
 }
 
 img {

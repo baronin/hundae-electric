@@ -1,6 +1,13 @@
 {% from 'common/njk/head.njk' import head %}
 {% from 'common/njk/scripts.njk' import scripts %}
+{% from 'components/card/card.njk' import createCard %}
 
+{% set cards2 = [
+  { pathImg: '../../assets/img/icons/icon-goal.svg', altText: 'alt', title: 'Береговая охрана', desc: 'null' },
+  { pathImg: '../../assets/img/icons/icon-goal.svg', altText: 'alt2', title: 'Береговая охрана', desc: 'null' },
+  { pathImg: '../../assets/img/icons/icon-goal.svg', altText: 'alt1', title: 'Береговая охрана', desc: 'null' },
+  { pathImg: '../../assets/img/icons/icon-goal.svg', altText: 'alt2', title: 'Береговая охрана', desc: 'null' }
+] %}
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -8,10 +15,20 @@
 
 <body>
 {% include "components/header/header.njk" %}
-<main class="main main-news">
-  <div class="news-container">
-    {% include "components/section-product-info/product-info.njk" %}
+<main class="main">
+  {% include "components/breadcrumbs/breadcrumbs.njk" %}
+  <div class="product-heading">
+    <h1>Ксеноновые прожекторы Hundae Electric</h1>
+    <ul class="product-power-list">
+      <li>4000 Bт</li>
+      <li>4500 Bт</li>
+      <li>5000 Bт</li>
+    </ul>
   </div>
+  {% include "components/section-product-slider/product-slider.njk" %}
+  {% include "components/section-product-infographics/product-infographics.njk" %}
+  {% include "components/section-product-info-cards/product-info-cards.njk" %}
+  {% include "components/section-product-description/product-description.njk" %}
 </main>
 {% include "components/footer/footer.njk" %}
 

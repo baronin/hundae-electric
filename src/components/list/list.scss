@@ -10,7 +10,7 @@
     font-size: $font-size-m;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 16px;
       left: 0;
@@ -21,6 +21,9 @@
     }
   }
 
+  p {
+    color: $color-dark-blue;
+  }
   a {
     color: $color-blue-light;
     &:hover {

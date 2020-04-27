@@ -1,20 +1,21 @@
 @import "../../common/sass/mixins";
 .breadcrumb {
+  @include container();
   display: flex;
   padding-top: 38px;
   padding-bottom: 20px;
 
   .is-active {
-    color: darken($color-grey, 80%)
+    color: darken($color-grey, 80%);
   }
 
   a {
     font-family: $font-family-roboto;
     font-size: $font-size-xs;
     color: $color-grey;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
-      color: darken($color-grey, 80%)
+      color: darken($color-grey, 80%);
     }
   }
 
@@ -39,4 +40,3 @@
     margin-left: 12px;
   }
 }
-

@@ -1,0 +1,23 @@
+<section class="product-description">
+    <div class="product-description-left">
+      <h2>Описание</h2>
+      <p>С момента своего основания в декабре 1981 года, компании Hyun Dae Electric непрерывно развивалась в качестве
+        профессиональной судоремонтной компании по ремонту электрооборудования. Наша компания была первой национальной
+        компанией, разработавшей в 1983 году прожектор для приманки рыбы, стабилиза- тор для прожектора и
+        сигнализатор, осуществляя поставки этих продуктов различ- ным местным рыбопромысловым компаниям. Кроме того, в
+        1988 году был построен завод Hyun Dae Electric (Завод 2: расположен в Namhang-dong Пусан, окр. Ёндо-гу) для
+        расширения объема производства и осуществления поставок распределитель- ных панелей и щитов для судов. </p>
+    </div>
+    <div class="product-description-right">
+      <h2>Сферы применения</h2>
+      <div class="product-description-infographics">
+        {% for card in cards2 %}
+          <div class="product-description-infographics-col">
+            <div class=" product-infographics-border">
+              {{ createCard(card.pathImg,card.altText,card.title,card.desc) }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</section>

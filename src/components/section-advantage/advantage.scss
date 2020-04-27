@@ -16,7 +16,12 @@
   @include container(1016px);
   padding-top: 48px;
   padding-bottom: 48px;
-  background: linear-gradient(117deg, rgba(213, 255, 57, 1) 0%, rgba(174, 214, 10, 1) 0%, rgba(67, 178, 42, 1) 100%);
+  background: linear-gradient(
+    117deg,
+    rgba(213, 255, 57, 1) 0%,
+    rgba(174, 214, 10, 1) 0%,
+    rgba(67, 178, 42, 1) 100%
+  );
 
   &:before {
     content: "";
@@ -40,7 +45,6 @@
     border-bottom: 0 solid transparent;
     border-top: 29px solid transparent;
   }
-
 }
 
 .advantage-header {

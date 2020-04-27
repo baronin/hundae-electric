@@ -1,0 +1,90 @@
+@import "../../common/sass/mixins";
+
+.product-info-cards {
+  background-image: url("../../assets/img/bg-vector.svg"),
+    url("../../assets/img/bg-vector2.svg");
+  background-repeat: no-repeat;
+  background-position: left 60%, 85% -40%;
+
+  @include fh {
+    background-position: left 60%, 95% -40%;
+  }
+  @include desktop {
+    background-position: left 60%, right 0;
+  }
+  @include laptop {
+    background-image: none;
+  }
+
+  .product-characteristics-list {
+    @include mobile {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        max-width: 50%;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.product-info-card {
+  @include container(1014px, 25px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid $color-grey-light;
+  border-radius: 5px;
+  background-color: $color-white;
+  @include laptop {
+    flex-direction: column;
+  }
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.product-info-card-content {
+  display: flex;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.product-info-card-header {
+  h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  span {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 20px;
+    background-color: $color-yellow;
+    border-radius: 3px;
+    @include mobile {
+      margin-top: 8px;
+    }
+  }
+}
+
+.product-info-card-img-wrap {
+  max-width: 720px;
+  width: 100%;
+  margin-right: 54px;
+  flex-shrink: 0;
+  @include laptop {
+    flex-shrink: 1;
+  }
+
+  @include tablet {
+    margin-right: 0;
+  }
+
+  img {
+    height: 100%;
+  }
+}

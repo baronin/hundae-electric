@@ -17,24 +17,24 @@
     padding-right: 26px;
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -136px;
     left: -171px;
     width: 171px;
     height: 240px;
-    background-image: url('../../assets/img/vector.png');
+    background-image: url("../../assets/img/vector.png");
     background-repeat: no-repeat;
     z-index: 1;
   }
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: -118px;
     right: -171px;
     width: 171px;
     height: 196px;
-    background-image: url('../../assets/img/vector2.png');
+    background-image: url("../../assets/img/vector2.png");
     background-repeat: no-repeat;
     z-index: 1;
   }
@@ -66,6 +66,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: $font-size-m;
+  line-height: 20px;
   @include laptop {
     max-width: 20%;
   }
@@ -78,6 +79,7 @@
 
   h4 {
     margin-bottom: 12px;
+    font-family: $font-family-roboto-bold;
     color: $color-blue-light;
   }
 

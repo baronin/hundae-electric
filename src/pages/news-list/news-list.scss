@@ -1,11 +1,6 @@
 @import "../../common/sass/mixins";
 
-.main-news {
-  border-top: 1px solid $color-grey-light;
-  border-bottom: 1px solid $color-grey-light;
-}
-
-.main-news-container {
+.news-container {
   @include container();
 
   h1 {
@@ -14,12 +9,10 @@
   }
 }
 
-.main-news-content {
+.news-content {
   display: flex;
   padding-top: 20px;
-  padding-bottom: 20px;
   @include mobile {
     flex-direction: column;
-    padding-bottom: 32px;
   }
 }
