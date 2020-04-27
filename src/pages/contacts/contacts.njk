@@ -7,7 +7,7 @@
 
 <body>
 {% include "components/header/header.njk" %}
-<main class="main contacts">
+<main class="main">
   <div class="breadcrumb-holder">
     {% include "components/breadcrumbs/breadcrumbs.njk" %}
   </div>
@@ -16,8 +16,8 @@
       {% include "components/nav-main/nav-main.njk" %}
       <div class="wrapper-content">
         <h1>Контакты</h1>
-        <div class="contacts-infographics-row">
-          <div class="contacts-infographics-col">
+        <div class="contacts-infographics">
+          <div class="contacts-infographics-item">
             <div class=" contacts-infographics-border">
               <div class="contacts-infographics-image-holder">
                 <img src="../../assets/img/icons/icon-map.svg" alt="">
@@ -29,7 +29,7 @@
               </div>
             </div>
           </div>
-          <div class="contacts-infographics-col">
+          <div class="contacts-infographics-item">
             <div class=" contacts-infographics-border">
               <div class="contacts-infographics-image-holder">
                 <img src="../../assets/img/icons/icon-tel.svg" alt="">
@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="contacts-infographics-col">
+          <div class="contacts-infographics-item">
             <div class="contacts-infographics-border">
               <div class="contacts-infographics-image-holder">
                 <img src="../../assets/img/icons/icon-mail.svg" alt="">

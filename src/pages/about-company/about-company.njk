@@ -18,7 +18,7 @@
 
 <body>
 {% include "components/header/header.njk" %}
-<main class="main about-company">
+<main class="main">
   <div class="breadcrumb-holder">
     {% include "components/breadcrumbs/breadcrumbs.njk" %}
   </div>
@@ -32,7 +32,7 @@
           обеспечения комфортной жизнедеятельности. С 2008 года мы занимаемся сервисным обслуживанием и модернизацией
           любых инженерных систем.</p>
         <h2>Чем мы можем быть вам полезны</h2>
-        <ul class="section-news-list">
+        <ul class="news-post-list">
           {% for item in listItem %}
             {{ list(item.title,item.desc) }}
           {% endfor %}
@@ -43,7 +43,7 @@
         <p>В нашем портфолио есть проекты для крупных промышленных предприятий и маленьких частных домов. Мы беремся за
           проекты любой сложности и одинаково ответственно относимся ко всем нашим клиентам.</p>
         <h2>Что уже сделано?</h2>
-        <ul class="section-news-list">
+        <ul class="news-post-list">
           {% for item in listItem2 %}
             {{ list(item.title,item.desc) }}
           {% endfor %}

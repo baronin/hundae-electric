@@ -1,4 +1,5 @@
-.section-news-list {
+@import "../../common/sass/mixins";
+.news-post-list {
   margin-bottom: 38px;
   line-height: 22px;
 
@@ -19,6 +20,11 @@
       background-color: $color-blue;
       border-radius: 50%;
     }
+  }
+
+  h4 {
+    font-family: $font-family-roboto-bold;
+    font-weight: $font-weight-bold;
   }
 
   p {

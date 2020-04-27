@@ -19,20 +19,25 @@
     font-size: $font-size-xxs;
     line-height: 15px;
   }
+
+  a {
+    color: $color-grey;
+  }
 }
 
-.contacts-infographics-row {
+.contacts-infographics {
   display: flex;
   flex-wrap: wrap;
   margin-left: -6px;
   margin-right: -6px;
+  margin-bottom: 38px;
 }
 
-.contacts-infographics-col {
+.contacts-infographics-item {
   display: flex;
   max-width: 33.33%;
   width: 100%;
-  padding: 0 6px;
+  padding: 6px;
   @include mobile {
     max-width: 100%;
     padding-top: 10px;
@@ -58,12 +63,6 @@
 
   &:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-}
-
-.contacts-infographics-content {
-  a {
-    color: $color-grey;
   }
 }
 

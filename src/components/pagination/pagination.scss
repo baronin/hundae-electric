@@ -4,6 +4,9 @@
   position: relative;
   padding-top: 40px;
   padding-bottom: 50px;
+  @include mobile {
+    padding-top: 60px;
+  }
 }
 
 .pagination-link {
@@ -23,12 +26,12 @@
     &.pagination-prev {
       background-color: transparent;
       color: $color-blue;
-      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     }
     &.pagination-next {
       background-color: transparent;
       color: $color-blue;
-      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     }
   }
 

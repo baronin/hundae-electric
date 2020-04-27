@@ -13,6 +13,12 @@
 
 .news-container {
   @include container();
+
+  .pagination {
+    @include mobile {
+      margin-top: 32px;
+    }
+  }
 }
 
 .news-content {

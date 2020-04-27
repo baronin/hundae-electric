@@ -1,6 +1,7 @@
 @import "variables";
 
 .btn {
+  display: inline-block;
   padding: 6px 16px;
   text-align: center;
   font-size: $font-size-xxs;
