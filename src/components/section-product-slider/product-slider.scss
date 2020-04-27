@@ -20,6 +20,11 @@
 
 .product-heading {
   @include container();
+
+  h1 {
+    font-family: $font-family-roboto-medium;
+    font-weight: $font-weight-medium;
+  }
 }
 
 .product-info-wrap {

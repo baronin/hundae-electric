@@ -1,11 +1,10 @@
 @import "variables";
 
 .btn {
-  display: inline-block;
+  padding: 6px 16px;
   text-align: center;
   font-size: $font-size-xxs;
   font-family: $font-family-roboto;
-  padding: 8px 16px;
   color: inherit;
   background-color: transparent;
   border-radius: 5px;
@@ -26,6 +25,8 @@
 }
 
 .btn-primary {
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: $color-white;
   font-size: $font-size-xs;
   background-color: $color-blue-light;

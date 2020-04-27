@@ -11,13 +11,14 @@ html {
   color: $color-dark-blue;
   font-family: $font-family-base;
   font-size: $font-size-default;
-  font-weight: $font-weight-regular;
   line-height: 1.5;
   -webkit-overflow-scrolling: touch;
 }
+
 body {
   overflow-x: hidden;
 }
+
 input,
 textarea,
 button,
@@ -68,13 +69,6 @@ textarea {
   overflow-y: auto;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-weight: bold;
-}
-
 h1 {
   font-size: $font-size-4xl;
   font-family: $font-family-roboto-black;
@@ -83,20 +77,24 @@ h1 {
 h2 {
   font-size: $font-size-2xl;
   font-family: $font-family-roboto-bold;
+  font-weight: $font-weight-bold;
 }
 
 h3 {
   font-size: $font-size-xl;
   font-family: $font-family-roboto-bold;
+  font-weight: $font-weight-bold;
 }
 
 h4 {
   font-size: $font-size-m;
   font-family: $font-family-roboto-medium;
+  font-weight: $font-weight-medium;
 }
 
 h5 {
   font-family: $font-family-roboto-medium;
+  font-weight: $font-weight-medium;
   font-size: $font-size-xxs;
 }
 a {

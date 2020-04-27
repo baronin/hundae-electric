@@ -2,7 +2,7 @@
 
 .product-info-cards {
   background-image: url("../../assets/img/bg-vector.svg"),
-    url("../../assets/img/bg-vector2.svg");
+  url("../../assets/img/bg-vector2.svg");
   background-repeat: no-repeat;
   background-position: left 60%, 85% -40%;
 
@@ -16,16 +16,12 @@
     background-image: none;
   }
 
-  .product-characteristics-list {
-    @include mobile {
-      display: flex;
-      flex-wrap: wrap;
-      li {
-        max-width: 50%;
-        padding-right: 20px;
-      }
+  .product-characteristics {
+    @include tablet {
+      padding-top: 30px;
     }
   }
+
 }
 
 .product-info-card {
@@ -44,6 +40,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
 }
 
 .product-info-card-content {
@@ -51,10 +48,25 @@
   @include tablet {
     flex-direction: column;
   }
+
+  .product-characteristics-list {
+    margin-bottom: 18px;
+    @include mobile {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+      li {
+        max-width: 50%;
+        padding-right: 20px;
+      }
+    }
+  }
 }
 
 .product-info-card-header {
   h3 {
+    font-family: $font-family-roboto-medium;
+    font-weight: $font-weight-medium;
     margin-top: 8px;
     margin-bottom: 8px;
   }

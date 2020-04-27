@@ -9,8 +9,10 @@
 <body>
 {% include "components/header/header.njk" %}
 <main class="main">
-  <div class="news-container">
+  <div class="breadcrumb-holder">
     {% include "components/breadcrumbs/breadcrumbs.njk" %}
+  </div>
+  <div class="news-container">
     <h1>Новости</h1>
     {% include "components/button-filter/button-filter.njk" %}
     <div class="news-content">

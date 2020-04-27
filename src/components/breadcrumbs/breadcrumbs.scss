@@ -1,15 +1,22 @@
 @import "../../common/sass/mixins";
+
+.breadcrumb-holder {
+  padding-top: 30px;
+  padding-bottom: 12px;
+}
+
 .breadcrumb {
   @include container();
   display: flex;
-  padding-top: 38px;
-  padding-bottom: 20px;
+  flex-wrap: wrap;
 
   .is-active {
     color: darken($color-grey, 80%);
   }
 
   a {
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-family: $font-family-roboto;
     font-size: $font-size-xs;
     color: $color-grey;
@@ -21,7 +28,11 @@
 
   li {
     position: relative;
-    padding-right: 16px;
+    padding-right: 17px;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   li:not(:last-of-type):after {
@@ -34,9 +45,5 @@
     height: 7px;
     background-color: $color-grey;
     border-radius: 50%;
-  }
-
-  & > li + li {
-    margin-left: 12px;
   }
 }
