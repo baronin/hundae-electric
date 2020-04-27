@@ -22,6 +22,11 @@
     border-color: transparent;
     background-color: $color-blue-light;
   }
+
+  &:focus,
+  &:active {
+    background-color: $color-blue;
+  }
 }
 
 .btn-primary {

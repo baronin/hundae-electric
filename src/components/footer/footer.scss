@@ -166,7 +166,6 @@
       font-size: $font-size-xxs;
       font-family: $font-family-roboto;
       font-weight: $font-weight-regular;
-
     }
   }
 
@@ -208,6 +207,9 @@
 }
 
 .footer-nav-contact {
+  @include mobile {
+    margin-top: 33px;
+  }
   .footer-list-inner {
     a {
       font-size: 13px;

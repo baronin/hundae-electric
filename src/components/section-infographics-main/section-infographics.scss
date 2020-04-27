@@ -3,19 +3,19 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.section-infographics-container {
-  @include container(1070px);
-}
 
-.section-infographics-row {
+.infographics-main {
+  @include container(1046px, 8px);
   display: flex;
   flex-wrap: wrap;
   @include tablet {
     flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
-.section-infographics-col {
+.infographics-main-item {
   display: flex;
   max-width: 25%;
   padding: 7px;
@@ -36,11 +36,15 @@
   }
 
   h4 {
+    font-size: 14px;
     margin-bottom: 12px;
+  }
+  p {
+    font-size: $font-size-xxs;
   }
 }
 
-.section-infographics-border {
+.infographics-main-border {
   display: flex;
   width: 100%;
   padding: 20px 14px;

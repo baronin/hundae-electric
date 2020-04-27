@@ -6,15 +6,13 @@
   { pathImg: '../../assets/img/icons/icon-force.svg', altText: 'alt2', title: 'Степень защиты прожекторов IPx6', desc: 'Превосходно зарекомендовал себя для карабельного, сухопутного и берегового использования.' }
 ] %}
 <section class="section-infographics">
-  <div class="section-infographics-container">
-    <div class="section-infographics-row">
+    <div class="infographics-main">
       {% for card in cards %}
-        <div class="section-infographics-col">
-          <div class=" section-infographics-border">
+        <div class="infographics-main-item">
+          <div class="infographics-main-border">
             {{ createCard(card.pathImg,card.altText,card.title,card.desc) }}
           </div>
         </div>
       {% endfor %}
     </div>
-  </div>
 </section>

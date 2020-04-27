@@ -5,6 +5,10 @@
   padding-top: 35px;
   padding-bottom: 35px;
   font-family: $font-family-suisse-regular;
+  @include mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   p {
     color: $color-black;
@@ -100,6 +104,7 @@
   h4 {
     font-size: $font-size-xl;
     font-family: $font-family-suisse-bold;
+    font-weight: $font-weight-semi-bold;
   }
 }
 
@@ -121,6 +126,7 @@
   span {
     font-size: $font-size-large;
     font-family: $font-family-suisse-book;
+    font-weight: $font-weight-semi-bold;
     color: $color-white;
     line-height: 42px;
 

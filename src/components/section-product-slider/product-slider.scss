@@ -15,6 +15,15 @@
     @include mobile {
       padding-bottom: 16px;
     }
+
+    li {
+      border-radius: 2px;
+      padding-left: 8px;
+      padding-right: 8px;
+      &:nth-child(even) {
+        background-color: $color-grey-light10;
+      }
+    }
   }
 }
 

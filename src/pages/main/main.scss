@@ -1,7 +1,10 @@
-@import "../../common/sass/variables";
+@import "../../common/sass/mixins";
 .main {
   padding-bottom: 60px;
   border-top: 1px solid $color-grey-light;
   border-bottom: 1px solid $color-grey-light;
   overflow: hidden;
+  @include mobile {
+    padding-bottom: 40px;
+  }
 }
