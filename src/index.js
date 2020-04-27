@@ -14,4 +14,3 @@ require("components/hamburger/hamburger");
 require("components/header/header");
 require("components/modal/modal");
 require("components/section-product-slider/product-slider");
-require("components/section-news-list/news-post-slider");

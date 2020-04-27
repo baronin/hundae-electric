@@ -3,8 +3,8 @@ $(document).ready(() => {
 });
 const HEADER = document.querySelector(".header-bottom");
 const $HEADER_BOTTOM_CLASS = $(".header-bottom");
-const HEADER_BOTTOM_OFFSET = $HEADER_BOTTOM_CLASS.offset().top; // offset().top
-const HEADER_BOTTOM_HEIGHT = $HEADER_BOTTOM_CLASS.outerHeight(); // offset().top
+const HEADER_BOTTOM_OFFSET = $HEADER_BOTTOM_CLASS.offset().top;
+const HEADER_BOTTOM_HEIGHT = $HEADER_BOTTOM_CLASS.outerHeight();
 const MAIN_CLASS = document.querySelector(".main");
 const toggleHeaderBgOnScroll = () => {
   const onScroll = () => {
