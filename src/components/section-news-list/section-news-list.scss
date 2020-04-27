@@ -13,6 +13,7 @@
 
   h4 {
     color: $color-dark-blue;
+    transition: 0.3s;
   }
 }
 
@@ -30,6 +31,10 @@
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  &:hover h4 {
+    color: $color-blue;
   }
 
   p {

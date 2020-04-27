@@ -2,9 +2,8 @@
 
 .pagination {
   position: relative;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
-  margin-top: 20px;
 }
 
 .pagination-link {
@@ -20,6 +19,17 @@
   transition: ease 0.5s;
   &:hover {
     background-color: hsl(73, 80, 61);
+
+    &.pagination-prev {
+      background-color: transparent;
+      color: $color-blue;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    }
+    &.pagination-next {
+      background-color: transparent;
+      color: $color-blue;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    }
   }
 
   &:focus,
