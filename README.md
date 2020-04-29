@@ -1,12 +1,12 @@
 # hundae-electric
 
 ### pages
-[index](https://hundae-electric.netlify.app)
-[product](https://hundae-electric.netlify.app/product.html)
-[news-list](https://hundae-electric.netlify.app/news-list.html)
-[news-page](https://hundae-electric.netlify.app/news-page.html)
-[about-company](https://hundae-electric.netlify.app/about-company.html)
-[contacts](https://hundae-electric.netlify.app/contacts.html)
+* [index](https://hundae-electric.netlify.app)
+* [product](https://hundae-electric.netlify.app/product.html)
+* [news-list](https://hundae-electric.netlify.app/news-list.html)
+* [news-page](https://hundae-electric.netlify.app/news-page.html)
+* [about-company](https://hundae-electric.netlify.app/about-company.html)
+* [contacts](https://hundae-electric.netlify.app/contacts.html)
 
 ## Gulp boilerplate
 > All you need for static website coding. Includes live reload, SASS,  autoprefixer, EJS/PUG template engines, images reducing, JS/SASS linters, FTP deployment, JS bundling with browserify, ES2015+ ready, JS/CSS minification.*
