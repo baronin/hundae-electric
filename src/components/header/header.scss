@@ -205,9 +205,9 @@
 
   &.is-open {
     background: linear-gradient(
-      0deg,
-      rgba(10, 41, 65, 0.5),
-      rgba(10, 41, 65, 0.5)
+                    0deg,
+                    rgba(10, 41, 65, 0.5),
+                    rgba(10, 41, 65, 0.5)
     );
     visibility: visible;
 
@@ -353,6 +353,25 @@
     &:hover {
       background-image: none;
       border: 1px solid $color-grey;
+    }
+  }
+}
+
+.presentation {
+  padding-top: 20px;
+
+  ul {
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    li:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    a {
+      color: $color-blue;
+      padding: 10px;
     }
   }
 }
