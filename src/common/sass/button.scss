@@ -2,10 +2,10 @@
 
 .btn {
   display: inline-block;
+  padding: 6px 16px;
   text-align: center;
   font-size: $font-size-xxs;
   font-family: $font-family-roboto;
-  padding: 8px 16px;
   color: inherit;
   background-color: transparent;
   border-radius: 5px;
@@ -23,9 +23,16 @@
     border-color: transparent;
     background-color: $color-blue-light;
   }
+
+  &:focus,
+  &:active {
+    background-color: $color-blue;
+  }
 }
 
 .btn-primary {
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: $color-white;
   font-size: $font-size-xs;
   background-color: $color-blue-light;
@@ -60,7 +67,7 @@
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 18px;
     height: 8px;
@@ -94,7 +101,7 @@
   cursor: pointer;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

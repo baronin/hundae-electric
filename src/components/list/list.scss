@@ -1,4 +1,6 @@
-.section-news-list {
+@import "../../common/sass/mixins";
+
+.news-post-list {
   margin-bottom: 38px;
   line-height: 22px;
 
@@ -10,7 +12,7 @@
     font-size: $font-size-m;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 16px;
       left: 0;
@@ -21,6 +23,14 @@
     }
   }
 
+  h4 {
+    font-family: $font-family-roboto-bold;
+    font-weight: $font-weight-bold;
+  }
+
+  p {
+    color: $color-dark-blue;
+  }
   a {
     color: $color-blue-light;
     &:hover {

@@ -1,25 +1,30 @@
 @import "../../common/sass/mixins";
 
-.main-news {
-  border-top: 1px solid $color-grey-light;
-  border-bottom: 1px solid $color-grey-light;
-}
-
-.main-news-container {
+.news-title {
   @include container();
+  margin-bottom: 10px;
 
   h1 {
     font-family: $font-family-roboto-medium;
-    margin-bottom: 10px;
+    font-weight: $font-weight-medium;
+    color: $color-black;
   }
 }
 
-.main-news-content {
+.news-container {
+  @include container();
+
+  .pagination {
+    @include mobile {
+      margin-top: 32px;
+    }
+  }
+}
+
+.news-content {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
   @include mobile {
     flex-direction: column;
-    padding-bottom: 32px;
   }
 }

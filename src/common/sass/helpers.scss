@@ -10,16 +10,14 @@
     flex-direction: column;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     margin-bottom: 20px;
+    color: $color-black;
   }
 
   .img-responsive {
-    margin-bottom: 40px;
-  }
-
-  i {
-    line-height: 22px;
+    margin-bottom: 35px;
   }
 }
 
@@ -28,6 +26,12 @@
     margin-bottom: 38px;
     font-size: $font-size-m;
     color: $color-dark-blue;
+  }
+
+  h1 {
+    font-family: $font-family-roboto-medium;
+    font-weight: $font-weight-medium;
+    font-size: 28px;
   }
 }
 

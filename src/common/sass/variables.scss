@@ -13,15 +13,16 @@ $color-white: #fff;
 $color-black: #000;
 $color-grey: #9597a9;
 $color-grey-light: #e5e6ed;
+$color-grey-light10: #f8f8fa;
 $color-dark-blue: #1b1e37;
 $color-blue-light: #50c0ff;
-$color-blue-light20: #27AEFB;
+$color-blue-light20: #27aefb;
 $color-blue: #009af1;
 $color-yellow: #d5ff39;
 $color-green: #9ac32e;
 $color-lightgreen: #aed60a;
 $color-darkgreen: #43b22a;
-$color-red: #EE5453;
+$color-red: #ee5453;
 
 // Fonts
 
@@ -54,5 +55,10 @@ $font-family-suisse-medium: "SuisseIntl-Medium", sans-serif;
 $font-family-suisse-bold: "SuisseIntl-SemiBold", sans-serif;
 
 $font-family-base: $font-family-roboto, sans-serif;
+$font-weight-thin: 100;
+$font-weight-light: 300;
 $font-weight-regular: 400;
-
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;

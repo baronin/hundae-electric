@@ -1,0 +1,100 @@
+@import "../../common/sass/mixins";
+
+.product-info-cards {
+  background-image: url("../../assets/img/bg-vector.svg");
+  background-repeat: no-repeat;
+  background-position: left 10%;
+
+  .product-characteristics {
+    @include tablet {
+      padding-top: 30px;
+    }
+  }
+}
+
+.product-info-card {
+  position: relative;
+  @include container(1014px, 25px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid $color-grey-light;
+  border-radius: 5px;
+  background-color: $color-white;
+  @include laptop {
+    flex-direction: column;
+  }
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &:first-child:after {
+    position: absolute;
+    content: "";
+    top: -70px;
+    right: -173px;
+    width: 180px;
+    height: 191px;
+    background: url("../../assets/img/vector2.png") no-repeat top;
+    background-size: contain;
+  }
+}
+
+.product-info-card-content {
+  display: flex;
+  @include tablet {
+    flex-direction: column;
+  }
+
+  .product-characteristics-list {
+    margin-bottom: 18px;
+    @include mobile {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+      li {
+        max-width: 50%;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.product-info-card-header {
+  h3 {
+    font-family: $font-family-roboto-medium;
+    font-weight: $font-weight-medium;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  span {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 20px;
+    background-color: $color-yellow;
+    border-radius: 3px;
+    @include mobile {
+      margin-top: 8px;
+    }
+  }
+}
+
+.product-info-card-img-wrap {
+  max-width: 720px;
+  width: 100%;
+  margin-right: 54px;
+  flex-shrink: 0;
+  @include laptop {
+    flex-shrink: 1;
+  }
+
+  @include tablet {
+    margin-right: 0;
+  }
+
+  img {
+    height: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+{% from 'components/infographics-basic/infographics-basic.njk' import createCard %}
+{% set cards = [
+  { pathImg: './assets/img/icons/icon-safe.svg', altText: 'alt', title: 'Степень защиты прожекторов IPx6', desc: 'Защита от сильных водных струй и морской воды.' },
+  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt2', title: 'Степень защиты прожекторов IPx6', desc: 'Превосходно зарекомендовал себя для карабельного, сухопутного и берегового использования.' },
+  { pathImg: './assets/img/icons/icon-mod.svg', altText: 'alt1', title: 'Степень защиты прожекторов IPx6', desc: 'Защита от сильных водных струй и морской воды.' },
+  { pathImg: './assets/img/icons/icon-force.svg', altText: 'alt2', title: 'Степень защиты прожекторов IPx6', desc: 'Превосходно зарекомендовал себя для карабельного, сухопутного и берегового использования.' }
+] %}
+
+<div class="infographics-main">
+  {% for card in cards %}
+    <div class="infographics-main-item">
+      <div class="infographics-main-border">
+        {{ createCard(card.pathImg,card.altText,card.title,card.desc) }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

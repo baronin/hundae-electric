@@ -13,33 +13,48 @@
 // Plugins
 @import "plugins/slick/slick";
 
+// Infographic
+@import "components/infographics-basic/infographics-basic";
+@import "components/infographics/contacts-infographics/contacts-infographics";
+@import "components/infographics/target-infographics/target-infographics";
+@import "components/infographics/main-infographics/main-infographics";
+@import "components/infographics/product-infographics/product-infographics";
+@import "components/infographics/product-description-infographics/product-description-infographics";
+
+// Forms
+@import "components/forms/form-callbeck/form-callbeck";
+
 // Components
 @import "components/hamburger/hamburger";
 @import "components/list/list";
-@import "components/pagination/pagination";
-@import "components/card/card";
-@import "components/modal/modal";
-@import "components/modal/modal-send-request";
-@import "components/header/header";
-@import "components/hero/hero";
-@import "components/section-infographics/section-infographics";
-@import "components/section-about-products/section-about-products";
-@import "components/floodlight-models/floodlight-models";
-@import "components/main-information/main-information";
-@import "components/section-advantage/advantage";
-@import "components/section-target/target";
-@import "components/section-news-posts/news-posts";
 @import "components/breadcrumbs/breadcrumbs";
-@import "components/section-product-info/product-info";
+@import "components/pagination/pagination";
+@import "components/modals/modal";
+@import "components/modals/modal-send-request";
 @import "components/button-filter/button-filter";
+
+@import "components/header/header";
+@import "components/section-hero/hero";
+@import "components/floodlight-models/floodlight-models";
+@import "components/section-main-information/main-information";
+@import "components/section-target/target";
+
+@import "components/section-about-products/section-about-products";
+@import "components/section-advantage/advantage";
+
+@import "components/section-product-slider/product-slider";
+@import "components/section-product-info-cards/product-info-cards";
+@import "components/section-product-description/product-description";
+
+@import "components/section-news-posts/news-posts";
 @import "components/section-news-list/section-news-list";
-@import "components/aside-news/aside-news";
 @import "components/section-news/section-news";
+@import "components/aside-news/aside-news";
 @import "components/nav-main/nav-main";
 @import "components/footer/footer";
 
 // Pages
 @import "pages/main/main";
 @import "pages/news-list/news-list";
-@import "pages/contacts/contacts";
-
+@import "pages/product/product";
+@import "pages/ui/ui";

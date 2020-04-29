@@ -1,0 +1,21 @@
+@import "../../common/sass/mixins";
+
+.ui {
+  .wrapper-content {
+    width: 100%;
+  }
+
+  .modal-window {
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+  .modal-callback {
+    position: relative;
+    top: auto;
+    transform: translateX(-50%);
+    @include mobile {
+      transform: none;
+    }
+  }
+}

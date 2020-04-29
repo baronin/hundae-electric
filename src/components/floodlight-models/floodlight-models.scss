@@ -1,11 +1,17 @@
 @import "../../common/sass/mixins";
 .floodlight-models {
   padding: 20px 14px;
+
+  h2 {
+    padding-bottom: 24px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid $color-grey-light;
+  }
 }
 
 .floodlight-models-container {
   position: relative;
-  @include container(1046px, 40px);
+  @include container(1015px, 40px);
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: $color-white;
@@ -17,40 +23,27 @@
     padding-right: 26px;
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -136px;
     left: -171px;
     width: 171px;
     height: 240px;
-    background-image: url('../../assets/img/vector.png');
+    background-image: url("../../assets/img/vector.png");
     background-repeat: no-repeat;
     z-index: 1;
   }
   &:after {
-    content: '';
+    content: "";
     position: absolute;
-    top: -118px;
-    right: -171px;
+    top: -78px;
+    right: -162px;
     width: 171px;
     height: 196px;
-    background-image: url('../../assets/img/vector2.png');
+    background-image: url("../../assets/img/vector2.png");
     background-repeat: no-repeat;
     z-index: 1;
   }
-}
-
-.floodlight-models-title {
-  font-size: $font-size-2xl;
-}
-
-.floodlight-models-hr {
-  margin-top: 24px;
-  margin-bottom: 14px;
-  height: 1px;
-  color: $color-grey-light;
-  background-color: $color-grey-light;
-  border: none;
 }
 
 .floodlight-models-list {
@@ -66,6 +59,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: $font-size-m;
+  line-height: 20px;
   @include laptop {
     max-width: 20%;
   }
@@ -78,6 +72,8 @@
 
   h4 {
     margin-bottom: 12px;
+    font-family: $font-family-roboto-bold;
+    font-weight: $font-weight-bold;
     color: $color-blue-light;
   }
 

@@ -1,0 +1,71 @@
+@import "../../common/sass/mixins";
+
+.product-power-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  li {
+    padding: 8px 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    font-family: $font-family-roboto-medium;
+    font-weight: $font-weight-medium;
+    font-size: 26px;
+    background-color: $color-yellow;
+    border-radius: 3px;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.product-characteristics {
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .btn {
+    align-self: self-start;
+  }
+
+  h3 {
+    font-family: $font-family-roboto-medium;
+    font-weight: $font-weight-medium;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  strong {
+    font-size: $font-size-m;
+    font-family: $font-family-roboto-medium;
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+}
+
+.product-characteristics-list {
+  li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  h5 {
+    font-family: $font-family-roboto;
+    font-size: 11px;
+    padding-bottom: 5px;
+    color: $color-grey;
+  }
+
+  p {
+    font-family: $font-family-roboto;
+    font-size: $font-size-xs;
+    color: $color-black;
+  }
+}

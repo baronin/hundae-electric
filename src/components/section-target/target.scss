@@ -1,54 +1,19 @@
 @import "../../common/sass/variables";
 @import "../../common/sass/mixins";
 .target {
-  padding-top: 35px;
+  padding-top: 40px;
   padding-bottom: 35px;
+  @include mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 .target-container {
   @include container();
-
   h2 {
     margin-bottom: 25px;
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
-
-  p {
-    color: $color-black;
-  }
-}
-
-.target-list {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: $font-size-s;
-  font-family: $font-family-roboto-bold;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.target-item {
-  padding: 8px;
-  max-width: 25%;
-  width: 100%;
-  @include tablet {
-    max-width: 50%;
-  }
-  @include mobile {
-    max-width: 100%;
-  }
-}
-.target-border {
-  @include display-flex(flex-start, center);
-  padding: 20px 15px;
-  border: 1px solid $color-blue-light;
-  border-radius: 5px;
-  transition: 0.3s;
-  &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-}
-
-.target-icon {
-  width: 47px;
-  height: 47px;
-  margin-right: 16px;
 }

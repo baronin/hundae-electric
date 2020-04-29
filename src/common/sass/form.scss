@@ -7,7 +7,7 @@
     right: 16px;
     top: 68px;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: -48px;
       right: 0;
@@ -36,10 +36,10 @@
       padding-top: 3px;
       margin-top: -1px;
       font-family: $font-family-roboto;
-      font-size: $font-size-xs;
+      font-size: $font-size-xxs;
       color: $color-red;
       border-top: 2px solid $color-red;
-      transition:0.2s ease all;
+      transition: 0.2s ease all;
     }
   }
 
@@ -64,11 +64,12 @@
   .label-placeholder {
     position: relative;
     width: 100%;
+    font-size: $font-size-xs;
     transition: 0.2s ease all;
 
     &[for="name"]:after,
     &[for="email"]:after {
-      content: '*';
+      content: "*";
       margin-left: 3px;
       color: $color-red;
     }
@@ -81,7 +82,7 @@
   }
 
   .label-placeholder,
-  .label-placeholder-file{
+  .label-placeholder-file {
     position: absolute;
     left: 16px;
     top: 20px;
@@ -138,7 +139,7 @@
     padding: 10px 0;
   }
   &::before {
-    content: 'Выберите файл';
+    content: "Выберите файл";
     position: absolute;
     top: 0;
     right: 0;
@@ -168,4 +169,18 @@
 
 .input-file::-webkit-file-upload-button {
   visibility: hidden;
+}
+
+.form-holder {
+  padding: 28px 35px;
+  border: 1px solid $color-grey-light;
+  border-radius: 5px;
+  @include mobile {
+    padding: 16px;
+  }
+
+  h4 {
+    font-family: $font-family-roboto-bold;
+    font-size: $font-size-l;
+  }
 }

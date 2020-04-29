@@ -1,16 +1,17 @@
 @import "variables";
 
 // Path fonts
-$pathFonts: "/assets/fonts";
+$pathFonts: "../../assets/fonts";
 
 // Fonts
 @mixin font($fontName, $weight, $style, $urlName) {
   font-family: "#{$fontName}";
   src: url(#{$pathFonts}/#{$urlName}/#{$fontName}.eot);
-  src: url(#{$pathFonts}/#{$urlName}/#{$fontName}.eot#iefix) format("embedded-opentype"),
-  url(#{$pathFonts}/#{$urlName}/#{$fontName}.woff) format("woff"),
-  url(#{$pathFonts}/#{$urlName}/#{$fontName}.ttf) format("truetype"),
-  url(#{$pathFonts}/#{$urlName}/#{$fontName}.svg) format("svg");
+  src: url(#{$pathFonts}/#{$urlName}/#{$fontName}.eot#iefix)
+      format("embedded-opentype"),
+    url(#{$pathFonts}/#{$urlName}/#{$fontName}.woff) format("woff"),
+    url(#{$pathFonts}/#{$urlName}/#{$fontName}.ttf) format("truetype"),
+    url(#{$pathFonts}/#{$urlName}/#{$fontName}.svg) format("svg");
   font-weight: $weight;
   font-style: $style;
   font-display: swap;

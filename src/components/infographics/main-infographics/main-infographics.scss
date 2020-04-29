@@ -1,0 +1,61 @@
+@import "../../../common/sass/mixins";
+
+.infographics-main {
+  @include container(1046px, 8px);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet {
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.infographics-main-item {
+  display: flex;
+  max-width: 25%;
+  padding: 7px;
+  @include tablet {
+    max-width: 100%;
+    padding: 5px 0;
+  }
+
+  .infographics-image-holder {
+    @include laptop {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+    @include tablet {
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: $font-size-xxs;
+  }
+}
+
+.infographics-main-border {
+  display: flex;
+  width: 100%;
+  padding: 20px 14px;
+  border: 1px solid $color-grey-light;
+  border-radius: 5px;
+  transition: 0.3s;
+  @include laptop {
+    flex-direction: column;
+  }
+  @include tablet {
+    flex-direction: row;
+  }
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../common/sass/mixins";
+
+.product-description {
+  @include container();
+  display: flex;
+  padding-top: 60px;
+  @include tablet {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    line-height: 18px;
+  }
+}
+
+.product-description-left {
+  max-width: 464px;
+  width: 100%;
+  margin-right: 50px;
+  @include tablet {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-family: $font-family-roboto-medium;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.product-description-right {
+  @include tablet {
+    padding-top: 32px;
+  }
+}
