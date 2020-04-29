@@ -1,15 +1,6 @@
 <section class="target">
   <div class="target-container">
     <h2>Сферы применения</h2>
-    <div class="target-infographics">
-      {% for i in range(0, 4) %}
-        <div class="target-infographics-item">
-          <div class="target-border">
-            <img src="./assets/img/icons/icon-goal.svg" alt="" class="target-icon">
-            <p>Береговая охрана</p>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+    {% include "components/infographics/target-infographics/target-infographics.njk" %}
   </div>
 </section>

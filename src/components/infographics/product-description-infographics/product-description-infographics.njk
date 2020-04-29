@@ -1,0 +1,18 @@
+{% from 'components/infographics-basic/infographics-basic.njk' import createCard %}
+
+{% set cards2 = [
+  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt', title: 'Береговая охрана', desc: 'null' },
+  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt2', title: 'Береговая охрана', desc: 'null' },
+  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt1', title: 'Береговая охрана', desc: 'null' },
+  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt2', title: 'Береговая охрана', desc: 'null' }
+] %}
+
+<div class="product-description-infographics">
+  {% for card in cards2 %}
+    <div class="product-description-infographics-item">
+      <div class=" product-infographics-border">
+        {{ createCard(card.pathImg,card.altText,card.title,card.desc) }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

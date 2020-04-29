@@ -184,36 +184,3 @@
     font-size: $font-size-l;
   }
 }
-
-.callback-form {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -8px;
-  margin-right: -8px;
-
-  .input-group {
-    max-width: calc(50% - 18px);
-    width: 100%;
-    margin: 20px 8px;
-    font-family: $font-family-roboto-medium;
-    font-size: $font-size-s;
-    @include tablet {
-      max-width: 100%;
-      margin-top: 28px;
-      margin-bottom: 0;
-    }
-  }
-
-  input {
-    font-family: $font-family-roboto-medium;
-    font-size: $font-size-s;
-  }
-
-  textarea {
-    margin: 20px 8px 40px;
-  }
-
-  .btn {
-    margin: 8px;
-  }
-}

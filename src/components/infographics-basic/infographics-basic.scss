@@ -1,0 +1,11 @@
+@import "../../common/sass/variables";
+
+.infographics-image-holder {
+  max-width: 50px;
+  margin-right: 16px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+  }
+}

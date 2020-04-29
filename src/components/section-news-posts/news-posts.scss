@@ -24,6 +24,11 @@
   margin-left: -8px;
   margin-right: -8px;
   overflow-x: auto;
+  &::-webkit-scrollbar {
+    /* chrome based */
+    width: 0; /* ширина scrollbar'a */
+    background: transparent; /* опционально */
+  }
   span {
     display: inline-block;
     font-size: $font-size-xs;
@@ -35,6 +40,7 @@
     font-size: $font-size-m;
     line-height: 1.2;
     margin-bottom: 8px;
+    transition: ease 0.4s;
   }
 }
 
@@ -52,5 +58,9 @@
     .news-posts-img {
       max-width: 100%;
     }
+  }
+
+  &:hover h4 {
+    color: $color-blue;
   }
 }

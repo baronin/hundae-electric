@@ -1,6 +1,12 @@
 @import "../../common/sass/mixins";
 .floodlight-models {
   padding: 20px 14px;
+
+  h2 {
+    padding-bottom: 24px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid $color-grey-light;
+  }
 }
 
 .floodlight-models-container {
@@ -38,15 +44,6 @@
     background-repeat: no-repeat;
     z-index: 1;
   }
-}
-
-.floodlight-models-hr {
-  margin-top: 24px;
-  margin-bottom: 14px;
-  height: 1px;
-  color: $color-grey-light;
-  background-color: $color-grey-light;
-  border: none;
 }
 
 .floodlight-models-list {

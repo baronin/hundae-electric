@@ -8,78 +8,15 @@
 <body>
 {% include "components/header/header.njk" %}
 <main class="main">
-  <div class="breadcrumb-holder">
     {% include "components/breadcrumbs/breadcrumbs.njk" %}
-  </div>
   <div class="container">
     <div class="wrapper">
       {% include "components/nav-main/nav-main.njk" %}
       <div class="wrapper-content">
         <h1>Контакты</h1>
-        <div class="contacts-infographics">
-          <div class="contacts-infographics-item">
-            <div class=" contacts-infographics-border">
-              <div class="contacts-infographics-image-holder">
-                <img src="./assets/img/icons/icon-map.svg" alt="">
-              </div>
-              <div class="contacts-infographics-content">
-                <h4>Центральный офис</h4>
-                <p>Москва, ул. Пушкина 21, 3 этаж, офис 4
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="contacts-infographics-item">
-            <div class=" contacts-infographics-border">
-              <div class="contacts-infographics-image-holder">
-                <img src="./assets/img/icons/icon-tel.svg" alt="">
-              </div>
-              <div class="contacts-infographics-content">
-                <h4>Телефон дляя справок</h4>
-                <a href="tel:+7 (000) 000-00-30">+7 (000) 000-00-30</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="contacts-infographics-item">
-            <div class="contacts-infographics-border">
-              <div class="contacts-infographics-image-holder">
-                <img src="./assets/img/icons/icon-mail.svg" alt="">
-              </div>
-              <div class="contacts-infographics-content">
-                <h4>Email</h4>
-                <a href="mailto:info@hundae.com">info@hundae.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% include "components/infographics/contacts-infographics/contacts-infographics.njk" %}
         <img class="img-responsive" src="./assets/img/map.jpg" alt="map">
-        <div class="form-holder">
-          <h4>Форма обратной связи</h4>
-          <form action="" class="form callback-form">
-            <div class="input-group">
-              <input id="name"
-                     class="input"
-                     name="name"
-                     type="text"
-                     minlength="1"
-                     maxlength="16"
-                     required>
-              <label for="name" class="label-placeholder">Контактное лицо</label>
-            </div>
-            <div class="input-group">
-              <input class="input js-mask-phone"
-                     id="phone"
-                     name="phone"
-                     type="tel"
-                     required>
-              <label for="phone" class="label-placeholder">Мобильный телефон</label>
-              <button class="clear-input-button js-clear-button" type="button"></button>
-            </div>
-            <textarea class="textarea" cols="16" rows="5" placeholder="Тектовое поле"></textarea>
-            <button class="btn btn-primary btn-lg" type="button"> Отправить</button>
-          </form>
-        </div>
+        {% include "components/forms/form-callbeck/form-callbeck.njk" %}
       </div>
     </div>
   </div>

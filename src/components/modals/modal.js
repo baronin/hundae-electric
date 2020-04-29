@@ -2,9 +2,9 @@ const KEY_CODE = {
   ESC: 27,
 };
 const BODY = document.querySelector("body");
-const MODAL = document.querySelector(".modal");
-const MODAL_WINDOW = document.querySelector(".modal-window");
-const MODAL_MASK = document.querySelector(".modal-mask");
+const MODAL = document.querySelector(".modals");
+const MODAL_WINDOW = document.querySelector(".modals-window");
+const MODAL_MASK = document.querySelector(".modals-mask");
 const BTN_CLOSR = document.querySelector(".is-btn-close");
 let previousActiveElement;
 

@@ -1,12 +1,3 @@
-{% from 'components/card/card.njk' import createCard %}
-
-{% set cards2 = [
-  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt', title: 'Береговая охрана', desc: 'null' },
-  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt2', title: 'Береговая охрана', desc: 'null' },
-  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt1', title: 'Береговая охрана', desc: 'null' },
-  { pathImg: './assets/img/icons/icon-goal.svg', altText: 'alt2', title: 'Береговая охрана', desc: 'null' }
-] %}
-
 <section class="product-description">
     <div class="product-description-left">
       <h2>Описание</h2>
@@ -19,14 +10,6 @@
     </div>
     <div class="product-description-right">
       <h2>Сферы применения</h2>
-      <div class="product-description-infographics">
-        {% for card in cards2 %}
-          <div class="product-description-infographics-col">
-            <div class=" product-infographics-border">
-              {{ createCard(card.pathImg,card.altText,card.title,card.desc) }}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      {% include "components/infographics/product-description-infographics/product-description-infographics.njk" %}
     </div>
 </section>

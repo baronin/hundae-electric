@@ -13,21 +13,31 @@
 // Plugins
 @import "plugins/slick/slick";
 
+// Infographic
+@import "components/infographics-basic/infographics-basic";
+@import "components/infographics/contacts-infographics/contacts-infographics";
+@import "components/infographics/target-infographics/target-infographics";
+@import "components/infographics/main-infographics/main-infographics";
+@import "components/infographics/product-infographics/product-infographics";
+@import "components/infographics/product-description-infographics/product-description-infographics";
+
+// Forms
+@import "components/forms/form-callbeck/form-callbeck";
+
 // Components
 @import "components/hamburger/hamburger";
 @import "components/list/list";
 @import "components/breadcrumbs/breadcrumbs";
 @import "components/pagination/pagination";
-@import "components/card/card";
-@import "components/modal/modal";
-@import "components/modal/modal-send-request";
+@import "components/modals/modal";
+@import "components/modals/modal-send-request";
+@import "components/button-filter/button-filter";
 
 @import "components/header/header";
-@import "components/hero/hero";
+@import "components/section-hero/hero";
 @import "components/floodlight-models/floodlight-models";
-@import "components/main-information/main-information";
+@import "components/section-main-information/main-information";
 @import "components/section-target/target";
-@import "components/section-infographics-main/section-infographics";
 
 @import "components/section-about-products/section-about-products";
 @import "components/section-advantage/advantage";
@@ -35,9 +45,6 @@
 @import "components/section-product-slider/product-slider";
 @import "components/section-product-info-cards/product-info-cards";
 @import "components/section-product-description/product-description";
-@import "components/section-product-infographics/product-infographics";
-
-@import "components/button-filter/button-filter";
 
 @import "components/section-news-posts/news-posts";
 @import "components/section-news-list/section-news-list";
