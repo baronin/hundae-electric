@@ -1,5 +1,16 @@
-<div class="modal">
-  <div class="modal-window modal-send-request">
+{% from 'common/njk/head.njk' import head %}
+{% from 'common/njk/scripts.njk' import scripts %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+{{ head('index', 'hundae-electric') }}
+
+<body>
+<div class="modal_1">
+  <p><a href="#modal-request1" rel="modal:open" class="btn-primary">Open Modal1</a></p>
+  <div id="modal-request1" class="modal-window modal-send-request">
+    <button type="button" class="btn-close is-btn-close"></button>
     <h3>Отпрвить запрос</h3>
     <p>Комбинированный аппарат, состоящий из охлаждающего вентилятора, достаточного для неогра- ниченного
       непрерывного
@@ -18,7 +29,7 @@
       <div class="input-group">
         <input id="company"
                class="input"
-               name="name"
+               name="company"
                type="text"
                minlength="1"
                maxlength="16"
@@ -28,7 +39,7 @@
       <div class="input-group">
         <input id="city"
                class="input"
-               name="name"
+               name="city"
                type="text"
                minlength="1"
                maxlength="16"
@@ -64,5 +75,38 @@
       <button class="btn btn-primary btn-lg" type="button">Жду звонка</button>
     </form>
   </div>
-  <div class="modal-mask"></div>
 </div>
+<div class="modal_2">
+  <a href="#modal-request2" rel="modal:open" class="btn-primary">Open Modal2</a>
+  <div id="modal-request2" class="modal-window modal-callback">
+    <button type="button" class="btn-close is-btn-close"></button>
+    <h3>Обратный звонок</h3>
+    <p>Комбинированный аппарат, состоящий из охлаждающего вентилятора, достаточного для неогра- ниченного</p>
+    <form action="" class="form" id="form">
+      <div class="input-group">
+        <input id="name"
+               class="input"
+               name="name"
+               type="text"
+               minlength="1"
+               maxlength="16"
+               required>
+        <label for="name" class="label-placeholder">Контактное лицо</label>
+      </div>
+      <div class="input-group">
+        <input class="input js-mask-phone"
+               id="phone"
+               name="phone"
+               type="tel"
+               required>
+        <label for="phone" class="label-placeholder">Мобильный телефон</label>
+        <button class="clear-input-button js-clear-button" type="button"></button>
+      </div>
+      <button class="btn btn-primary btn-lg" type="button">Жду звонка</button>
+    </form>
+  </div>
+</div>
+{{ scripts('index') }}
+</body>
+
+</html>

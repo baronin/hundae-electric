@@ -4,6 +4,7 @@
   max-width: 690px;
   width: 100%;
   padding: 42px 50px;
+  overflow: hidden;
   @include tablet {
     max-width: 90%;
     padding: 20px;

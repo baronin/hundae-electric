@@ -12,6 +12,7 @@ const paths = {
       "pages/about-company/about-company.njk",
       "pages/contacts/contacts.njk",
       "pages/ui/ui.njk",
+      "pages/modals/modals.njk"
     ],
     dist: "",
   },
