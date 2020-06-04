@@ -36,7 +36,6 @@
   color: $color-white;
   font-size: $font-size-xs;
   background-color: $color-blue-light;
-
   &:hover {
     background-color: $color-blue-light20;
   }
@@ -92,6 +91,11 @@
   font-size: $font-size-m;
 }
 
+.blocker {
+  overflow: auto;
+  z-index: 4;
+}
+
 .btn-close {
   position: absolute;
   top: 15px;
@@ -99,6 +103,7 @@
   width: 13px;
   height: 13px;
   cursor: pointer;
+  background-image: none;
 
   &:before {
     content: "";
