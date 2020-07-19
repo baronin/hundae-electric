@@ -1,36 +1,37 @@
 .target-infographics {
   display: flex;
   flex-wrap: wrap;
-  font-size: $font-size-s;
   font-family: $font-family-roboto-bold;
+  font-size: $font-size-s;
   margin-left: -8px;
   margin-right: -8px;
 }
 
 .target-infographics-item {
-  padding: 8px;
   max-width: 25%;
+  padding: 8px;
   width: 100%;
   @include tablet {
     max-width: 50%;
   }
+
   @include mobile {
     max-width: 100%;
   }
 
   p {
-    font-family: $font-family-roboto-medium;
-    font-weight: $font-weight-medium;
-    font-size: 14px;
     color: $color-dark-blue;
+    font-family: $font-family-roboto-medium;
+    font-size: 14px;
+    font-weight: $font-weight-medium;
   }
 }
 
 .target-border {
   @include display-flex(flex-start, center);
-  padding: 20px 15px;
   border: 1px solid $color-blue-light;
   border-radius: 5px;
+  padding: 20px 15px;
   transition: 0.3s;
   &:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -38,7 +39,7 @@
 }
 
 .target-icon {
-  width: 47px;
   height: 47px;
   margin-right: 16px;
+  width: 47px;
 }

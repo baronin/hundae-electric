@@ -1,8 +1,8 @@
 @import "../../common/sass/mixins";
 
 .about-products {
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
 
   h2 {
     margin-bottom: 12px;
@@ -16,8 +16,8 @@
   }
 
   p {
-    margin-bottom: 12px;
     line-height: 18px;
+    margin-bottom: 12px;
   }
 }
 
@@ -31,9 +31,9 @@
   .about-products-main,
   .about-products-extra {
     display: flex;
-    width: 100%;
     padding-left: 22px;
     padding-right: 22px;
+    width: 100%;
     @include laptop {
       padding-left: 0;
       padding-right: 0;
@@ -44,18 +44,18 @@
 .about-products-main {
   max-width: 60%;
   @include laptop {
-    max-width: 100%;
     margin-bottom: 60px;
+    max-width: 100%;
   }
 
   .about-products-img-wrap {
-    max-width: 218px;
+    flex-shrink: 0;
     margin-right: 56px;
     margin-top: -30px;
-    flex-shrink: 0;
+    max-width: 218px;
     @include laptop {
-      max-width: 132px;
       margin-right: 20px;
+      max-width: 132px;
     }
 
     img {
@@ -74,16 +74,16 @@
 
   .about-products-content {
     @include laptop {
-      display: -webkit-box;
-      -webkit-line-clamp: 9;
       -webkit-box-orient: vertical;
+      -webkit-line-clamp: 9;
+      display: -webkit-box;
     }
   }
 }
 
 .about-products-extra {
-  max-width: 40%;
   flex-direction: column;
+  max-width: 40%;
   @include laptop {
     max-width: 100%;
   }
@@ -99,7 +99,7 @@
 }
 
 .article-about-products-img-wrap {
-  max-width: 130px;
   flex-shrink: 0;
   margin-right: 22px;
+  max-width: 130px;
 }

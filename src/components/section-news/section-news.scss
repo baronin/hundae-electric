@@ -11,10 +11,10 @@
   }
 
   p {
+    color: $color-dark-blue;
     font-size: $font-size-m;
     line-height: 22px;
     margin-bottom: 16px;
-    color: $color-dark-blue;
 
     a {
       color: $color-blue-light;
@@ -31,8 +31,8 @@
   }
 
   .btn-back-wrap {
-    margin-top: 60px;
     margin-bottom: 20px;
+    margin-top: 60px;
     @include mobile {
       text-align: center;
     }

@@ -1,8 +1,8 @@
 @import "../../common/sass/mixins";
 
 .breadcrumb-holder {
-  padding-top: 30px;
   padding-bottom: 12px;
+  padding-top: 30px;
 }
 
 .breadcrumb {
@@ -15,11 +15,11 @@
   }
 
   a {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    color: $color-grey;
     font-family: $font-family-roboto;
     font-size: $font-size-xs;
-    color: $color-grey;
+    padding-bottom: 8px;
+    padding-top: 8px;
     transition: all 0.3s ease;
     &:hover {
       color: darken($color-grey, 80%);
@@ -27,9 +27,9 @@
   }
 
   li {
-    position: relative;
-    padding-right: 17px;
     margin-right: 12px;
+    padding-right: 17px;
+    position: relative;
     &:last-child {
       margin-right: 0;
       padding-right: 0;
@@ -37,14 +37,14 @@
   }
 
   li:not(:last-of-type):after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    width: 7px;
-    height: 7px;
     background-color: $color-grey;
     border-radius: 50%;
+    content: "";
+    height: 7px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
   }
 }

@@ -15,10 +15,10 @@
 
   strong {
     display: inline-block;
-    margin-bottom: 6px;
     font-family: $font-family-roboto-medium;
-    font-weight: $font-weight-medium;
     font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    margin-bottom: 6px;
   }
 
   p {
@@ -33,15 +33,16 @@
 .header-top {
   @include container();
   @include display-flex(space-between, flex-start);
-  padding-top: 40px;
   line-height: 14px;
+  padding-top: 40px;
   @include laptop {
     flex-wrap: wrap;
     padding-bottom: 15px;
   }
+
   @include mobile {
-    padding-top: 21px;
     padding-bottom: 18px;
+    padding-top: 21px;
   }
 }
 
@@ -50,23 +51,24 @@
   @include laptop {
     order: 0;
   }
+
   @include tablet {
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
   }
 
   .logo-main {
-    max-width: 210px;
     margin-right: 50px;
+    max-width: 210px;
     @include tablet {
-      max-width: 162px;
       margin-right: 10px;
+      max-width: 162px;
     }
   }
 
   .logo-extra {
-    max-width: 100px;
     margin-right: 46px;
+    max-width: 100px;
     @include laptop {
       margin-right: 10px;
     }
@@ -74,13 +76,14 @@
 }
 
 .header-info {
-  max-width: 240px;
   margin-right: 15px;
+  max-width: 240px;
   @include laptop {
-    order: 1;
-    max-width: 100%;
     margin-right: 0;
+    max-width: 100%;
+    order: 1;
   }
+
   @include mobile {
     display: none;
   }
@@ -102,8 +105,8 @@
 }
 
 .header-contact-address {
-  margin-right: 28px;
   line-height: 15px;
+  margin-right: 28px;
   @include mobile {
     display: none;
   }
@@ -122,8 +125,8 @@
   }
 
   .link-phone {
-    font-size: $font-size-l;
     color: $color-black;
+    font-size: $font-size-l;
     margin-bottom: 15px;
 
     &:hover {
@@ -133,24 +136,24 @@
 }
 
 .header-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: $color-white;
   border-bottom: 1px solid $color-grey-light;
+  left: 0;
+  position: fixed;
+  top: 0;
   transition: transform 1s;
+  width: 100%;
   z-index: 10;
 }
 
 .header-bottom {
-  padding-top: 30px;
   padding-bottom: 18px;
+  padding-top: 30px;
 
   @include mobile {
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-top: 1px solid $color-grey-light;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 }
 
@@ -168,15 +171,16 @@
   @include laptop {
     flex-shrink: 0;
   }
+
   @include mobile {
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   .is-open {
     ~ .js-hamburger {
-      position: absolute;
       left: -100px;
+      position: absolute;
     }
   }
 
@@ -193,14 +197,14 @@
 
 .header-menu {
   @include tablet {
-    position: fixed;
-    z-index: -1;
-    left: 0;
-    top: 0;
     bottom: 0;
     height: 100vh;
-    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
     visibility: hidden;
+    width: 100%;
+    z-index: -1;
   }
 
   &.is-open {
@@ -230,13 +234,13 @@
   position: relative;
   transition: 0.5s;
   @include tablet {
-    flex-direction: column;
-    width: 100%;
-    max-width: 285px;
-    height: 100%;
-    padding: 20px 30px;
     background-color: $color-white;
+    flex-direction: column;
+    height: 100%;
+    max-width: 285px;
+    padding: 20px 30px;
     transform: translateX(-100%);
+    width: 100%;
   }
 }
 
@@ -251,21 +255,22 @@
     @include laptop {
       margin-right: 18px;
     }
+
     @include tablet {
-      margin-right: 0;
-      padding-top: 14px;
-      padding-bottom: 14px;
       border-bottom: 1px solid $color-grey;
+      margin-right: 0;
+      padding-bottom: 14px;
+      padding-top: 14px;
       &:hover {
         border-bottom: 1px solid $color-blue;
       }
     }
 
     &:hover .header-nav-list-inner {
-      display: block;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       box-shadow: 4px 12px 19px -9px rgba(0, 0, 0, 0.15);
+      display: block;
       @include tablet {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
@@ -278,29 +283,29 @@
     }
 
     & > a {
-      position: relative;
-      @include display-flex(flex-start, center);
-      padding-right: 14px;
       font-family: $font-family-rubik-regular;
+      @include display-flex(flex-start, center);
       font-size: $font-size-s;
+      padding-right: 14px;
+      position: relative;
 
       &:after {
+        background: url("../../assets/img/icons/arrow.svg") no-repeat center;
         content: "";
+        height: 8px;
         position: absolute;
+        right: 0;
         top: 50%;
         transform: translateY(-50%);
-        right: 0;
-        width: 8px;
-        height: 8px;
-        background: url("../../assets/img/icons/arrow.svg") no-repeat center;
         transition: 0.3s;
+        width: 8px;
       }
     }
   }
 
   a {
-    font-size: $font-size-s;
     color: $color-black;
+    font-size: $font-size-s;
 
     &:hover {
       color: $color-blue;
@@ -309,18 +314,18 @@
 }
 
 .header-nav-list-inner {
-  position: absolute;
+  background-color: $color-white;
   display: none;
   padding-top: 10px;
-  background-color: $color-white;
+  position: absolute;
   @include tablet {
     position: relative;
   }
 
   a {
-    padding: 0 15px;
     font-family: $font-family-rubik-regular;
     line-height: 34px;
+    padding: 0 15px;
     white-space: nowrap;
 
     &:hover {
@@ -330,26 +335,28 @@
 }
 
 .header-input-search {
-  position: relative;
-  max-width: 242px;
-  width: 100%;
-  padding: 8px 30px 8px 12px;
-  border-radius: 3px;
   background-color: $color-grey-light;
   background-image: url("../../assets/img/icons/search.svg");
-  background-repeat: no-repeat;
   background-position: 95% center;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  max-width: 242px;
+  padding: 8px 30px 8px 12px;
+  position: relative;
+  width: 100%;
   @include laptop {
     max-width: 188px;
     width: auto;
   }
+
   @include laptop {
     max-width: 170px;
   }
+
   @include mobile {
-    padding-right: 42px;
     background-color: #fff;
     background-image: url("../../assets/img/icons/search-black.svg");
+    padding-right: 42px;
     &:hover {
       background-image: none;
       border: 1px solid $color-grey;

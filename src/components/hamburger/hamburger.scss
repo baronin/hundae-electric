@@ -1,47 +1,50 @@
 .btn-hamburger {
-  width: 33px;
-  height: 33px;
   display: inline-block;
-  position: relative;
+  height: 33px;
   padding: 0;
+  position: relative;
+  width: 33px;
   span {
-    width: 100%;
-    float: left;
-    margin-bottom: 4px;
-    height: 3px;
     background: $color-black;
-    position: relative;
+    float: left;
+    height: 3px;
+    margin-bottom: 4px;
     overflow: hidden;
+    position: relative;
     transition: all 0.2s ease-in-out;
+    width: 100%;
   }
 }
 
 .hamburger-close {
   position: absolute;
-  top: 14px;
   right: 20px;
+  top: 14px;
 
   span {
     background-color: $color-grey;
     &:before {
       content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 0;
       height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
       transition: all 0.2s ease-in-out;
+      width: 0;
     }
+
     &:nth-last-child(3) {
-      transform: rotate(-45deg);
       margin-bottom: 0;
+      transform: rotate(-45deg);
     }
+
     &:nth-last-child(2) {
-      transform: rotate(45deg);
       margin-bottom: 0;
       top: -2px;
+      transform: rotate(45deg);
       width: 100%;
     }
+
     &:nth-last-child(1) {
       width: 0;
     }

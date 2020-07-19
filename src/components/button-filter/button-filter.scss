@@ -1,12 +1,12 @@
 @import "../../common/sass/mixins";
 
 .buttons-filter-list {
-  margin-right: -6px;
   margin-left: -6px;
+  margin-right: -6px;
 
   .is-active {
-    color: $color-white;
     background-color: $color-dark-blue;
+    color: $color-white;
     &:hover {
       color: $color-dark-blue;
     }
@@ -14,14 +14,14 @@
 }
 
 .btn-filter {
-  display: inline-block;
-  padding: 4px 16px;
-  margin: 8px 6px;
-  font-size: $font-size-xs;
-  color: $color-dark-blue;
   background-color: $color-grey-light;
   border-radius: 3px;
+  color: $color-dark-blue;
   cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-xs;
+  margin: 8px 6px;
+  padding: 4px 16px;
 
   &:hover {
     background-color: $color-grey-light;
@@ -31,7 +31,7 @@
   &:active,
   &:focus {
     background-color: $color-grey-light10;
-    color: $color-dark-blue;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    color: $color-dark-blue;
   }
 }

@@ -3,19 +3,19 @@
 .product-power-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 5px;
   padding-bottom: 5px;
+  padding-top: 5px;
 
   li {
-    padding: 8px 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 8px;
-    font-family: $font-family-roboto-medium;
-    font-weight: $font-weight-medium;
-    font-size: 26px;
     background-color: $color-yellow;
     border-radius: 3px;
+    font-family: $font-family-roboto-medium;
+    font-size: 26px;
+    font-weight: $font-weight-medium;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    margin-top: 5px;
+    padding: 8px 14px;
 
     &:last-child {
       margin-left: 0;
@@ -37,35 +37,35 @@
 
   h3 {
     font-family: $font-family-roboto-medium;
-    font-weight: $font-weight-medium;
     font-size: 16px;
+    font-weight: $font-weight-medium;
     margin-bottom: 14px;
   }
 
   strong {
-    font-size: $font-size-m;
     font-family: $font-family-roboto-medium;
-    margin-top: 12px;
+    font-size: $font-size-m;
     margin-bottom: 16px;
+    margin-top: 12px;
   }
 }
 
 .product-characteristics-list {
   li {
-    padding-top: 8px;
     padding-bottom: 8px;
+    padding-top: 8px;
   }
 
   h5 {
+    color: $color-grey;
     font-family: $font-family-roboto;
     font-size: 11px;
     padding-bottom: 5px;
-    color: $color-grey;
   }
 
   p {
+    color: $color-black;
     font-family: $font-family-roboto;
     font-size: $font-size-xs;
-    color: $color-black;
   }
 }

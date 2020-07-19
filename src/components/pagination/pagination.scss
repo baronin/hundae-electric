@@ -1,24 +1,24 @@
 @import "../../common/sass/mixins";
 
 .pagination {
-  position: relative;
-  padding-top: 40px;
   padding-bottom: 50px;
+  padding-top: 40px;
+  position: relative;
   @include mobile {
     padding-top: 60px;
   }
 }
 
 .pagination-link {
-  padding: 9px 12px;
-  margin-left: 8px;
-  margin-right: 8px;
-  text-align: center;
-  font-size: $font-size-m;
-  color: $color-dark-blue;
   border: 1px solid transparent;
   border-radius: 3px;
+  color: $color-dark-blue;
+  font-size: $font-size-m;
+  margin-left: 8px;
+  margin-right: 8px;
   outline: none;
+  padding: 9px 12px;
+  text-align: center;
   transition: ease 0.5s;
   &:hover {
     background-color: hsl(73, 80, 61);
@@ -28,6 +28,7 @@
       color: $color-blue;
       text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     }
+
     &.pagination-next {
       background-color: transparent;
       color: $color-blue;
@@ -37,9 +38,10 @@
 
   &:focus,
   &:active {
-    border-color: $color-blue-light;
     background-color: hsl(73, 90, 61);
+    border-color: $color-blue-light;
   }
+
   &.is-active {
     background-color: $color-yellow;
     &:active,
@@ -51,8 +53,8 @@
 
 .pagination-prev,
 .pagination-next {
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
   position: relative;
   @include mobile {
     position: absolute;
@@ -65,13 +67,14 @@
   @include mobile {
     left: 0;
   }
+
   &:before {
+    background-image: url("../../assets/img/icons/arrow-pagination.svg");
     content: "";
+    height: 8px;
+    left: 5px;
     position: absolute;
     width: 18px;
-    height: 8px;
-    background-image: url("../../assets/img/icons/arrow-pagination.svg");
-    left: 5px;
   }
 }
 
@@ -80,13 +83,14 @@
   @include mobile {
     right: 0;
   }
+
   &:after {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 8px;
     background-image: url("../../assets/img/icons/arrow-pagination.svg");
+    content: "";
+    height: 8px;
+    position: absolute;
     right: 5px;
     transform: rotate(180deg);
+    width: 18px;
   }
 }

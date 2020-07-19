@@ -5,30 +5,30 @@
 }
 
 html {
-  direction: ltr;
-  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
   color: $color-dark-blue;
+  direction: ltr;
   font-family: $font-family-base;
   font-size: $font-size-default;
   line-height: 1.5;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
-  overflow-x: hidden;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 input,
 textarea,
 button,
 select {
-  font-family: $font-family-base;
+  background: none;
+  border: 1px solid transparent;
   border-radius: 0;
   box-shadow: none;
-  border: 1px solid transparent;
-  background: none;
+  font-family: $font-family-base;
   outline: none;
 }
 
@@ -66,38 +66,39 @@ textarea {
 }
 
 textarea {
-  resize: none;
   overflow-y: auto;
+  resize: none;
 }
 
 h1 {
-  font-size: $font-size-4xl;
   font-family: $font-family-roboto-black;
+  font-size: $font-size-4xl;
 }
 
 h2 {
-  font-size: $font-size-2xl;
   font-family: $font-family-roboto-bold;
+  font-size: $font-size-2xl;
   font-weight: $font-weight-bold;
 }
 
 h3 {
-  font-size: $font-size-xl;
   font-family: $font-family-roboto-bold;
+  font-size: $font-size-xl;
   font-weight: $font-weight-bold;
 }
 
 h4 {
-  font-size: $font-size-m;
   font-family: $font-family-roboto-medium;
+  font-size: $font-size-m;
   font-weight: $font-weight-medium;
 }
 
 h5 {
   font-family: $font-family-roboto-medium;
-  font-weight: $font-weight-medium;
   font-size: $font-size-xxs;
+  font-weight: $font-weight-medium;
 }
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -113,9 +114,9 @@ b {
 }
 
 i {
+  color: $color-grey;
   font-size: $font-size-m;
   font-style: italic;
-  color: $color-grey;
   line-height: 22px;
 }
 

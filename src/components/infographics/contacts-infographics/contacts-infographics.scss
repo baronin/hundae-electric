@@ -3,6 +3,7 @@
     font-size: $font-size-s;
     margin-bottom: 8px;
   }
+
   p {
     font-size: $font-size-xxs;
     line-height: 15px;
@@ -16,34 +17,35 @@
 .contacts-infographics {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 38px;
   margin-left: -6px;
   margin-right: -6px;
-  margin-bottom: 38px;
 }
 
 .contacts-infographics-item {
   display: flex;
   max-width: 33.33%;
-  width: 100%;
   padding: 6px;
+  width: 100%;
   @include mobile {
     max-width: 100%;
-    padding-top: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
   }
 }
 
 .contacts-infographics-border {
-  display: flex;
-  width: 100%;
-  padding: 20px;
   border: 1px solid $color-grey-light;
   border-radius: 5px;
+  display: flex;
+  padding: 20px;
   transition: 0.3s;
+  width: 100%;
   @include laptop {
     flex-direction: column;
     text-align: center;
   }
+
   @include mobile {
     flex-direction: row;
     text-align: left;
@@ -55,19 +57,20 @@
 }
 
 .contacts-infographics-image-holder {
-  max-width: 40px;
-  width: 100%;
   height: 40px;
   margin-right: 14px;
+  max-width: 40px;
+  width: 100%;
   @include laptop {
+    margin-bottom: 14px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 14px;
   }
+
   @include mobile {
+    margin-bottom: 0;
     margin-left: 0;
     margin-right: 14px;
-    margin-bottom: 0;
   }
 
   img {

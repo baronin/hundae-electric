@@ -86,8 +86,10 @@ Code Sample:
 ```
 
 #### Linters
-* [SCSS-Lint](https://github.com/brigade/scss-lint), NOTE: You need to install Ruby.
+* [SCSS-Lint](https://github.com/brigade/scss-lint)
 * [ESLint](https://github.com/eslint/eslint)
 
 #### Plugins
+* [jquery-mask-plugin](http://igorescobar.github.io/jQuery-Mask-Plugin/docs.html)
 * [jqueryvalidation](https://jqueryvalidation.org/documentation/)
+* [slick-carousel](https://kenwheeler.github.io/slick/)

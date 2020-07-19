@@ -9,11 +9,12 @@
 .footer-top {
   @include container();
   display: flex;
-  padding-top: 38px;
   padding-bottom: 30px;
+  padding-top: 38px;
   @include tablet {
     flex-direction: column;
   }
+
   @include mobile {
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,21 +22,22 @@
 }
 
 .footer-nav-info {
+  flex-shrink: 0;
+  margin-right: 40px;
   max-width: 124px;
   width: 100%;
-  margin-right: 40px;
-  flex-shrink: 0;
   @include tablet {
     display: flex;
-    padding-right: 0;
-    max-width: 100%;
     margin-bottom: 30px;
+    max-width: 100%;
+    padding-right: 0;
   }
+
   @include mobile {
-    max-width: 50%;
     flex-direction: column;
     margin-bottom: 0;
     margin-right: 0;
+    max-width: 50%;
   }
 
   .footer-list-holder {
@@ -43,6 +45,7 @@
       max-width: 160px;
       width: 100%;
     }
+
     @include mobile {
       max-width: 100%;
     }
@@ -61,20 +64,22 @@
 }
 
 .footer-middle {
+  margin-right: 74px;
   max-width: 516px;
   width: 100%;
-  margin-right: 74px;
   @include laptop {
     padding-right: 30px;
   }
+
   @include tablet {
     display: flex;
     max-width: 100%;
   }
+
   @include mobile {
-    max-width: 50%;
     flex-direction: column;
     margin-right: 0;
+    max-width: 50%;
   }
 }
 
@@ -82,6 +87,7 @@
   @include tablet {
     display: flex;
   }
+
   @include mobile {
     flex-direction: column;
   }
@@ -89,15 +95,15 @@
 
 .footer-list-inner {
   a {
-    font-size: $font-size-xxs;
     color: $color-grey;
+    font-size: $font-size-xxs;
     line-height: 1.2;
   }
 }
 
 .footer-list-title {
-  margin-bottom: 8px;
   color: $color-dark-blue;
+  margin-bottom: 8px;
 }
 
 .footer-nav-catalog {
@@ -121,8 +127,8 @@
 
 .footer-nav-resolution {
   @include tablet {
-    max-width: 50%;
     flex-shrink: 0;
+    max-width: 50%;
   }
 
   .footer-list-inner {
@@ -133,10 +139,10 @@
 
   a.footer-list-title {
     @include mobile {
-      font-family: $font-family-roboto;
-      font-weight: $font-weight-regular;
-      font-size: $font-size-xxs;
       color: $color-grey;
+      font-family: $font-family-roboto;
+      font-size: $font-size-xxs;
+      font-weight: $font-weight-regular;
     }
   }
 }
@@ -150,8 +156,8 @@
 
   li {
     max-width: 50%;
-    width: 100%;
     padding-right: 40px;
+    width: 100%;
   }
 }
 
@@ -163,8 +169,8 @@
     font-weight: $font-weight-medium;
     @include mobile {
       color: $color-grey;
-      font-size: $font-size-xxs;
       font-family: $font-family-roboto;
+      font-size: $font-size-xxs;
       font-weight: $font-weight-regular;
     }
   }
@@ -179,10 +185,10 @@
 .footer-nav-resolution,
 .footer-nav-contact {
   .footer-list-title {
-    font-size: $font-size-m;
-    font-family: $font-family-suisse-book;
-    font-weight: $font-weight-semi-bold;
     color: $color-dark-blue;
+    font-family: $font-family-suisse-book;
+    font-size: $font-size-m;
+    font-weight: $font-weight-semi-bold;
   }
 }
 
@@ -210,22 +216,23 @@
   @include mobile {
     margin-top: 33px;
   }
+
   .footer-list-inner {
     a {
-      font-size: 13px;
       font-family: $font-family-suisse-regular;
+      font-size: 13px;
     }
   }
 }
 
 .footer-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
   border-top: 1px solid $color-grey-light;
   font-size: $font-size-xxs;
+  padding-bottom: 30px;
+  padding-top: 30px;
   @include mobile {
-    padding-top: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
 
   .footer-bottom-container {

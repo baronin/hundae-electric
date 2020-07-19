@@ -14,9 +14,9 @@
 }
 
 .news-posts-img {
-  max-width: 240px;
   border-radius: 5px;
   margin-bottom: 16px;
+  max-width: 240px;
 }
 
 .news-posts-list {
@@ -26,13 +26,14 @@
   overflow-x: auto;
   &::-webkit-scrollbar {
     /* chrome based */
-    width: 0; /* ширина scrollbar'a */
     background: transparent; /* опционально */
+    width: 0; /* ширина scrollbar'a */
   }
+
   span {
+    color: $color-grey;
     display: inline-block;
     font-size: $font-size-xs;
-    color: $color-grey;
     margin-bottom: 8px;
   }
 
@@ -45,16 +46,17 @@
 }
 
 .news-posts-item {
-  max-width: 25%;
-  width: 100%;
-  padding: 9px;
   color: $color-black;
+  max-width: 25%;
+  padding: 9px;
+  width: 100%;
   @include tablet {
     max-width: 50%;
   }
+
   @include mobile {
-    max-width: 240px;
     flex-shrink: 0;
+    max-width: 240px;
     .news-posts-img {
       max-width: 100%;
     }

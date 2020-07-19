@@ -12,8 +12,8 @@
 
   h1,
   h2 {
-    margin-bottom: 20px;
     color: $color-black;
+    margin-bottom: 20px;
   }
 
   .img-responsive {
@@ -23,15 +23,15 @@
 
 .wrapper-content {
   & > p {
-    margin-bottom: 38px;
-    font-size: $font-size-m;
     color: $color-dark-blue;
+    font-size: $font-size-m;
+    margin-bottom: 38px;
   }
 
   h1 {
     font-family: $font-family-roboto-medium;
-    font-weight: $font-weight-medium;
     font-size: 28px;
+    font-weight: $font-weight-medium;
   }
 }
 
@@ -48,20 +48,20 @@
 }
 
 .img-responsive {
-  width: 100%;
   display: block;
   height: auto;
+  width: 100%;
 }
 
 .title {
-  font-size: $font-size-4xl;
   font-family: $font-family-roboto-black;
+  font-size: $font-size-4xl;
   text-transform: uppercase;
 }
 
 .read-more {
-  padding-top: 10px;
   color: $color-black;
+  padding-top: 10px;
   text-decoration: underline;
 
   &:hover {

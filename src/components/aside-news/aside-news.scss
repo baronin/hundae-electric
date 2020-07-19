@@ -2,24 +2,27 @@
 
 .news-aside {
   flex-shrink: 0;
+  margin-left: 20px;
   max-width: 242px;
   width: 100%;
-  margin-left: 20px;
   @include laptop {
     max-width: 30%;
   }
+
   @include mobile {
-    max-width: 100%;
     margin-left: 0;
+    max-width: 100%;
   }
 }
+
 .aside-question {
-  padding: 70px 28px 80px 40px;
   background-color: #f5f6f8;
   border-radius: 3px;
+  padding: 70px 28px 80px 40px;
   @include tablet {
     padding: 22px;
   }
+
   @include mobile {
     display: flex;
   }
@@ -30,9 +33,10 @@
     margin-bottom: 12px;
   }
 }
+
 .aside-question-img {
-  max-width: 65px;
   margin-bottom: 12px;
+  max-width: 65px;
   @include mobile {
     margin-right: 26px;
   }

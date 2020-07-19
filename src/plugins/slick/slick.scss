@@ -1,26 +1,26 @@
 /* Slider */
 
 .slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
   -khtml-user-select: none;
+  -moz-user-select: none;
   -ms-touch-action: pan-y;
-  touch-action: pan-y;
+  -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  touch-action: pan-y;
+  user-select: none;
 }
 
 .slick-list {
-  position: relative;
   display: block;
-  overflow: hidden;
   margin: 0;
+  overflow: hidden;
   padding: 0;
+  position: relative;
 
   &:focus {
     outline: none;
@@ -35,31 +35,31 @@
 .slick-slider {
   .slick-track,
   .slick-list {
-    -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
 .slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
   display: block;
+  left: 0;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  top: 0;
 
   &:before {
-    display: table;
     content: "";
+    display: table;
   }
 
   &:after {
-    display: table;
-    content: "";
     clear: both;
+    content: "";
+    display: table;
   }
 }
 
@@ -101,9 +101,9 @@
 }
 
 .slick-vertical .slick-slide {
+  border: 1px solid transparent;
   display: block;
   height: auto;
-  border: 1px solid transparent;
 }
 
 .slick-arrow.slick-hidden {

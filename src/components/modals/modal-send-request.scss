@@ -2,9 +2,9 @@
 
 .modal-send-request {
   max-width: 690px;
-  width: 100%;
-  padding: 42px 50px;
   overflow: hidden;
+  padding: 42px 50px;
+  width: 100%;
   @include tablet {
     max-width: 90%;
     padding: 20px;
@@ -18,9 +18,9 @@
   }
 
   .input-group {
+    margin-bottom: 33px;
     margin-left: 8px;
     margin-right: 8px;
-    margin-bottom: 33px;
     &:not(.file-group) {
       display: inline-block;
       max-width: calc(50% - 18px);

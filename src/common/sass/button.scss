@@ -1,27 +1,27 @@
 @import "variables";
 
 .btn {
-  display: inline-block;
-  padding: 6px 16px;
-  text-align: center;
-  font-size: $font-size-xxs;
-  font-family: $font-family-roboto;
-  color: inherit;
   background-color: transparent;
   border-radius: 5px;
-  outline: none;
-  transition: 0.3s;
+  color: inherit;
   cursor: pointer;
+  display: inline-block;
+  font-family: $font-family-roboto;
+  font-size: $font-size-xxs;
+  outline: none;
+  padding: 6px 16px;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .btn-outline-primary {
-  color: $color-black;
   border: 1px solid $color-blue-light;
+  color: $color-black;
 
   &:hover {
-    color: $color-white;
-    border-color: transparent;
     background-color: $color-blue-light;
+    border-color: transparent;
+    color: $color-white;
   }
 
   &:focus,
@@ -31,11 +31,11 @@
 }
 
 .btn-primary {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  background-color: $color-blue-light;
   color: $color-white;
   font-size: $font-size-xs;
-  background-color: $color-blue-light;
+  padding-bottom: 8px;
+  padding-top: 8px;
   &:hover {
     background-color: $color-blue-light20;
   }
@@ -47,14 +47,14 @@
 }
 
 .btn-dark {
-  position: relative;
-  display: inline-flex;
   align-items: center;
-  padding: 8px 16px 8px 42px;
-  line-height: 20px;
-  color: $color-white;
-  font-size: $font-size-m;
   background-color: $color-dark-blue;
+  color: $color-white;
+  display: inline-flex;
+  font-size: $font-size-m;
+  line-height: 20px;
+  padding: 8px 16px 8px 42px;
+  position: relative;
 
   &:hover {
     background-color: hsla(234, 34, 16, 0.8);
@@ -66,19 +66,19 @@
   }
 
   &:before {
+    background-image: url("../../assets/img/icons/arrow-pagination.svg");
     content: "";
+    height: 8px;
+    left: 10px;
     position: absolute;
     width: 18px;
-    height: 8px;
-    background-image: url("../../assets/img/icons/arrow-pagination.svg");
-    left: 10px;
   }
 }
 
 .btn-outline-info {
+  border: 1px solid $color-lightgreen;
   color: $color-white;
   font-size: $font-size-xs;
-  border: 1px solid $color-lightgreen;
 
   &:hover {
     background-color: $color-lightgreen;
@@ -87,8 +87,8 @@
 
 .btn-lg {
   font-family: $font-family-roboto-medium;
-  padding: 12px 32px;
   font-size: $font-size-m;
+  padding: 12px 32px;
 }
 
 .blocker {
@@ -97,21 +97,21 @@
 }
 
 .btn-close {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  width: 13px;
-  height: 13px;
-  cursor: pointer;
   background-image: none;
+  cursor: pointer;
+  height: 13px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 13px;
 
   &:before {
+    background-image: url('../../assets/img/icons/icon-close.svg');
     content: "";
+    height: 13px;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 13px;
-    height: 13px;
-    background-image: url(../../assets/img/icons/icon-close.svg);
   }
 }

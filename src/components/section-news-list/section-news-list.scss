@@ -2,14 +2,14 @@
 
 .news-list {
   display: flex;
-  flex-wrap: wrap;
   flex: auto;
+  flex-wrap: wrap;
   margin-left: -8px;
   margin-right: -8px;
   @include mobile {
-    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    max-width: 100%;
   }
 
   h4 {
@@ -19,12 +19,12 @@
 }
 
 .news-item {
+  margin-bottom: 16px;
   max-width: 33.33%;
-  width: 100%;
+  padding-bottom: 16px;
   padding-left: 8px;
   padding-right: 8px;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
+  width: 100%;
   @include tablet {
     max-width: 50%;
   }
@@ -44,8 +44,8 @@
 }
 
 .news-img {
-  overflow: hidden;
   border-radius: 3px;
+  overflow: hidden;
 
   img {
     margin-bottom: 16px;

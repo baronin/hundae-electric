@@ -19,17 +19,17 @@
 }
 
 .product-description-left {
+  margin-right: 50px;
   max-width: 464px;
   width: 100%;
-  margin-right: 50px;
   @include tablet {
-    max-width: 100%;
     margin-right: 0;
+    max-width: 100%;
   }
 
   h2 {
-    font-size: 28px;
     font-family: $font-family-roboto-medium;
+    font-size: 28px;
     font-weight: $font-weight-medium;
   }
 }

@@ -1,11 +1,11 @@
 @import "../../common/sass/mixins";
 
 .hero {
-  position: relative;
-  @include display-flex(flex-start, center);
   min-height: 580px;
-  padding-top: 60px;
+  @include display-flex(flex-start, center);
   padding-bottom: 60px;
+  padding-top: 60px;
+  position: relative;
   @include fh {
     min-height: 500px;
   }
@@ -16,17 +16,17 @@
 }
 
 .hero-background {
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
 }
 
 .hero-background-image {
-  width: 100%;
   height: 100%;
   object-fit: cover;
+  width: 100%;
   @include mobile {
     object-position: top;
   }
@@ -50,18 +50,18 @@
     }
 
     span {
-      display: inline-block;
-      padding: 5px;
-      color: $color-white;
       background-color: $color-grey;
       border-radius: 3px;
+      color: $color-white;
+      display: inline-block;
+      padding: 5px;
     }
   }
 
   p {
     color: $color-white;
     font-family: $font-family-rubik-regular;
-    margin-bottom: 40px;
     line-height: 20px;
+    margin-bottom: 40px;
   }
 }

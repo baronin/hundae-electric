@@ -7,14 +7,14 @@
     right: 16px;
     top: 68px;
     &:before {
-      content: "";
-      position: absolute;
-      top: -48px;
-      right: 0;
-      width: 18px;
-      height: 18px;
       background-image: url("../../assets/img/icons/icons-error-close.svg");
+      content: "";
       cursor: pointer;
+      height: 18px;
+      position: absolute;
+      right: 0;
+      top: -48px;
+      width: 18px;
       z-index: 10;
     }
   }
@@ -29,28 +29,28 @@
     position: relative;
 
     label.error {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      padding-top: 3px;
-      margin-top: -1px;
+      border-top: 2px solid $color-red;
+      color: $color-red;
       font-family: $font-family-roboto;
       font-size: $font-size-xxs;
-      color: $color-red;
-      border-top: 2px solid $color-red;
+      left: 0;
+      margin-top: -1px;
+      padding-top: 3px;
+      position: absolute;
+      top: 100%;
       transition: 0.2s ease all;
+      width: 100%;
     }
   }
 
   .input {
-    width: 100%;
     padding: 20px 16px;
+    width: 100%;
 
     &::placeholder {
+      color: $color-grey;
       font-family: $font-family-roboto;
       font-size: $font-size-s;
-      color: $color-grey;
     }
 
     &:focus,
@@ -62,107 +62,109 @@
   }
 
   .label-placeholder {
-    position: relative;
-    width: 100%;
     font-size: $font-size-xs;
+    position: relative;
     transition: 0.2s ease all;
+    width: 100%;
 
     &[for="name"]:after,
     &[for="email"]:after {
+      color: $color-red;
       content: "*";
       margin-left: 3px;
-      color: $color-red;
     }
   }
 
   .label-placeholder.active {
-    position: absolute;
     display: block;
+    position: absolute;
     transform: translate(-12%, -100%) scale(0.75);
   }
 
   .label-placeholder,
   .label-placeholder-file {
-    position: absolute;
-    left: 16px;
-    top: 20px;
     color: $color-grey;
     font-family: $font-family-roboto;
+    left: 16px;
+    position: absolute;
+    top: 20px;
   }
 
   .textarea {
-    width: 100%;
     padding: 20px 16px;
+    width: 100%;
     @include tablet {
-      margin-top: 28px;
       margin-bottom: 28px;
+      margin-top: 28px;
     }
 
     &::placeholder {
+      color: $color-grey;
       font-family: $font-family-roboto;
       font-size: $font-size-xs;
-      color: $color-grey;
     }
   }
 }
 
 .file-group {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  margin-right: 8px;
-  margin-left: 8px;
-  margin-bottom: 20px;
-  padding: 20px 16px;
-  text-align: left;
   background-color: $color-grey-light;
   border-radius: 3px;
+  margin-bottom: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+  max-width: 100%;
+  padding: 20px 16px;
+  position: relative;
+  text-align: left;
+  width: 100%;
   @include mobile {
     padding-bottom: 0;
   }
 }
 
 .input-file {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  max-width: 134px;
-  width: auto;
-  padding: 6px;
   color: transparent;
+  max-width: 134px;
+  padding: 6px;
+  position: absolute;
+  right: 16px;
+  top: 10px;
   transition: 0.3s;
+  width: auto;
   @include mobile {
-    position: relative;
-    top: auto;
-    right: auto;
     max-width: 100%;
-    width: 100%;
     padding: 10px 0;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
   }
+
   &::before {
-    content: "Выберите файл";
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    padding: 8px 16px;
-    color: $color-dark-blue;
+    -webkit-user-select: none;
     border: 1px solid $color-blue;
     border-radius: 5px;
-    outline: none;
-    white-space: nowrap;
-    -webkit-user-select: none;
+    color: $color-dark-blue;
+    content: "Выберите файл";
     cursor: pointer;
+    display: inline-block;
+    outline: none;
+    padding: 8px 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
     transition: 0.3s;
+    white-space: nowrap;
     @include mobile {
       position: relative;
     }
   }
 
   &:hover:before {
-    color: $color-white;
     background-color: $color-blue;
+    color: $color-white;
   }
+
   &:active {
     outline: 0;
   }
@@ -173,9 +175,9 @@
 }
 
 .form-holder {
-  padding: 28px 35px;
   border: 1px solid $color-grey-light;
   border-radius: 5px;
+  padding: 28px 35px;
   @include mobile {
     padding: 16px;
   }

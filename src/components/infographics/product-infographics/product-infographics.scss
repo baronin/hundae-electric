@@ -10,12 +10,12 @@
 
   .infographics-image-holder {
     @include laptop {
-      margin-right: 0;
       margin-bottom: 16px;
+      margin-right: 0;
     }
     @include tablet {
-      margin-right: 16px;
       margin-bottom: 0;
+      margin-right: 16px;
     }
   }
 
@@ -27,21 +27,21 @@
 .product-infographics-item {
   display: flex;
   max-width: 25%;
-  width: 100%;
   padding: 8px;
+  width: 100%;
   @include tablet {
     max-width: 100%;
   }
 }
 
 .product-infographics-border {
-  display: flex;
   align-items: center;
-  width: 100%;
-  padding: 20px 14px;
   border: 1px solid $color-grey-light;
   border-radius: 5px;
+  display: flex;
+  padding: 20px 14px;
   transition: 0.3s;
+  width: 100%;
   @include laptop {
     flex-direction: column;
     text-align: center;
